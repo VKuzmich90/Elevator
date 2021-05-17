@@ -23,7 +23,7 @@ public class StatisticsService {
         log.debug("Statistics service created!");
     }
 
-    public static StatisticsService of(int numberFloorFrom, int numberFloorTo){
+    public static StatisticsService of(int numberFloorFrom, int numberFloorTo) {
         Preconditions.checkArgument(numberFloorFrom > 0, "Number floor must be positive");
         Preconditions.checkArgument(numberFloorTo > 0, "Number floor must be positive");
 

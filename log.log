@@ -432,3 +432,879 @@
 17.05.2021 18:09:26.137 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 10 floor
 17.05.2021 18:09:27.147 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 10,remove: [Passenger(weight=15, floorNumber=10)]
 17.05.2021 18:09:27.147 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=10, numberFloorFrom=8) = 1
+17.05.2021 18:31:46.141 [main] [INFO ]  by.kuzmich.models.Building - The building begins to be created
+17.05.2021 18:31:46.352 [main] [INFO ]  by.kuzmich.models.Building - The building was created
+17.05.2021 18:31:46.391 [Floor #1] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=1, direction=UP)
+17.05.2021 18:31:46.391 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=1, direction=UP)
+17.05.2021 18:31:46.401 [Floor #9] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=9, direction=DOWN)
+17.05.2021 18:31:46.402 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=9, direction=DOWN)
+17.05.2021 18:31:46.402 [Floor #10] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=10, direction=DOWN)
+17.05.2021 18:31:46.403 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now on the 1 floor
+17.05.2021 18:31:46.403 [Elevator #4] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=10, direction=DOWN)
+17.05.2021 18:31:46.403 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=UP)
+17.05.2021 18:31:46.403 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now on the 1 floor
+17.05.2021 18:31:46.403 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=3, direction=UP)
+17.05.2021 18:31:46.403 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=DOWN)
+17.05.2021 18:31:46.404 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=DOWN)
+17.05.2021 18:31:46.404 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=DOWN)
+17.05.2021 18:31:46.406 [Floor #7] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=DOWN)
+17.05.2021 18:31:46.407 [Floor #8] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=8, direction=DOWN)
+17.05.2021 18:31:46.407 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=DOWN)
+17.05.2021 18:31:46.407 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=34, floorNumber=3)]
+17.05.2021 18:31:46.406 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=100, floorNumber=1)]
+17.05.2021 18:31:46.408 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=108, floorNumber=3)]
+17.05.2021 18:31:46.404 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=22, floorNumber=3)]
+17.05.2021 18:31:46.403 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=96, floorNumber=2)]
+17.05.2021 18:31:46.401 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=3)], Down: []
+17.05.2021 18:31:46.404 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=55, floorNumber=1)]
+17.05.2021 18:31:46.403 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=71, floorNumber=10)], Down: []
+17.05.2021 18:31:46.401 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=10, floorNumber=6)]
+17.05.2021 18:31:46.407 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=102, floorNumber=5)]
+17.05.2021 18:31:47.416 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=5, direction=DOWN)
+17.05.2021 18:31:47.416 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 1, Add Passenger(weight=14, floorNumber=3)
+17.05.2021 18:31:47.417 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now on the 1 floor
+17.05.2021 18:31:47.417 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 14
+17.05.2021 18:31:51.428 [Floor #7] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=UP)
+17.05.2021 18:31:51.428 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to 5 floor
+17.05.2021 18:31:51.429 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=UP)
+17.05.2021 18:31:51.429 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9)], Down: [Passenger(weight=34, floorNumber=3)]
+17.05.2021 18:31:51.429 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=99, floorNumber=8)], Down: [Passenger(weight=55, floorNumber=1)]
+17.05.2021 18:31:51.429 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=DOWN)
+17.05.2021 18:31:51.429 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=71, floorNumber=10)], Down: [Passenger(weight=31, floorNumber=1)]
+17.05.2021 18:31:51.429 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=102, floorNumber=5), Passenger(weight=82, floorNumber=6)]
+17.05.2021 18:31:51.429 [Floor #9] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=9, direction=DOWN)
+17.05.2021 18:31:51.429 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=10, floorNumber=6), Passenger(weight=97, floorNumber=4)]
+17.05.2021 18:31:51.429 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=UP)
+17.05.2021 18:31:51.429 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=86, floorNumber=9)], Down: [Passenger(weight=100, floorNumber=1)]
+17.05.2021 18:31:51.429 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=108, floorNumber=3), Passenger(weight=30, floorNumber=1)]
+17.05.2021 18:31:51.429 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=DOWN)
+17.05.2021 18:31:51.429 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=22, floorNumber=3), Passenger(weight=74, floorNumber=2)]
+17.05.2021 18:31:51.429 [Floor #10] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=10, direction=DOWN)
+17.05.2021 18:31:51.429 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=96, floorNumber=2), Passenger(weight=62, floorNumber=3)]
+17.05.2021 18:31:51.429 [Floor #1] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=1, direction=UP)
+17.05.2021 18:31:51.429 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7)], Down: []
+17.05.2021 18:31:51.429 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=5, direction=DOWN)
+17.05.2021 18:31:51.429 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 5, Add Passenger(weight=22, floorNumber=3)
+17.05.2021 18:31:51.429 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 22
+17.05.2021 18:31:51.429 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 5, Add Passenger(weight=74, floorNumber=2)
+17.05.2021 18:31:51.429 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 96
+17.05.2021 18:31:51.460 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 1 floor
+17.05.2021 18:31:51.460 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 2 floor
+17.05.2021 18:31:52.483 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=2, direction=UP)
+17.05.2021 18:31:52.483 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 2, Add Passenger(weight=99, floorNumber=8)
+17.05.2021 18:31:52.483 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 113
+17.05.2021 18:31:54.407 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to 9 floor
+17.05.2021 18:31:54.407 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=9, direction=DOWN)
+17.05.2021 18:31:54.407 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 9, Add Passenger(weight=10, floorNumber=6)
+17.05.2021 18:31:54.407 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 10
+17.05.2021 18:31:54.407 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 9, Add Passenger(weight=97, floorNumber=4)
+17.05.2021 18:31:54.407 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 107
+17.05.2021 18:31:55.406 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to 10 floor
+17.05.2021 18:31:55.408 [Elevator #4] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=10, direction=DOWN)
+17.05.2021 18:31:55.409 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Floor: 10, Add Passenger(weight=96, floorNumber=2)
+17.05.2021 18:31:55.410 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 96
+17.05.2021 18:31:55.411 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Floor: 10, Add Passenger(weight=62, floorNumber=3)
+17.05.2021 18:31:55.411 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 158
+17.05.2021 18:31:55.422 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 9 floor
+17.05.2021 18:31:55.423 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 8 floor
+17.05.2021 18:31:55.425 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=8, direction=DOWN)
+17.05.2021 18:31:55.427 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 8, Add Passenger(weight=102, floorNumber=5)
+17.05.2021 18:31:55.428 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 209
+17.05.2021 18:31:55.430 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 8, Add Passenger(weight=82, floorNumber=6)
+17.05.2021 18:31:55.431 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 291
+17.05.2021 18:31:55.454 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now in the 5 floor
+17.05.2021 18:31:55.455 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 4 floor
+17.05.2021 18:31:55.456 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=4, direction=DOWN)
+17.05.2021 18:31:55.456 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=108, floorNumber=3)
+17.05.2021 18:31:55.456 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 204
+17.05.2021 18:31:55.457 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=30, floorNumber=1)
+17.05.2021 18:31:55.457 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 234
+17.05.2021 18:31:56.426 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 10 floor
+17.05.2021 18:31:56.427 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 9 floor
+17.05.2021 18:31:56.442 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 8 floor
+17.05.2021 18:31:56.443 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=UP)
+17.05.2021 18:31:56.443 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 7 floor
+17.05.2021 18:31:56.443 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3)], Down: [Passenger(weight=55, floorNumber=1)]
+17.05.2021 18:31:56.443 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8)], Down: [Passenger(weight=34, floorNumber=3)]
+17.05.2021 18:31:56.444 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=7, direction=DOWN)
+17.05.2021 18:31:56.444 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 7, Add Passenger(weight=34, floorNumber=3)
+17.05.2021 18:31:56.444 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 325
+17.05.2021 18:31:56.444 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=86, floorNumber=9)], Down: [Passenger(weight=100, floorNumber=1)]
+17.05.2021 18:31:56.444 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=UP)
+17.05.2021 18:31:56.445 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=71, floorNumber=10), Passenger(weight=32, floorNumber=8)], Down: [Passenger(weight=31, floorNumber=1)]
+17.05.2021 18:31:56.445 [Floor #8] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=8, direction=UP)
+17.05.2021 18:31:56.445 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10)], Down: []
+17.05.2021 18:31:56.446 [Floor #9] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=9, direction=DOWN)
+17.05.2021 18:31:56.446 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=103, floorNumber=8)]
+17.05.2021 18:31:56.447 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=UP)
+17.05.2021 18:31:56.449 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=68, floorNumber=9)], Down: []
+17.05.2021 18:31:56.449 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=DOWN)
+17.05.2021 18:31:56.449 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=35, floorNumber=1)]
+17.05.2021 18:31:56.450 [Floor #10] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=10, direction=DOWN)
+17.05.2021 18:31:56.450 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3)]
+17.05.2021 18:31:56.450 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7)], Down: []
+17.05.2021 18:31:56.473 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now in the 4 floor
+17.05.2021 18:31:56.474 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 3 floor
+17.05.2021 18:31:56.489 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 2 floor
+17.05.2021 18:31:56.490 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 3 floor
+17.05.2021 18:31:57.431 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 9 floor
+17.05.2021 18:31:57.431 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 8 floor
+17.05.2021 18:31:57.447 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 7 floor
+17.05.2021 18:31:57.447 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 6 floor
+17.05.2021 18:31:57.482 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 3,remove: [Passenger(weight=22, floorNumber=3), Passenger(weight=108, floorNumber=3)]
+17.05.2021 18:31:57.487 [Elevator #3] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=3, numberFloorFrom=4) = 1
+17.05.2021 18:31:57.488 [Elevator #3] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=3, numberFloorFrom=5) = 1
+17.05.2021 18:31:57.490 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=3, direction=DOWN)
+17.05.2021 18:31:57.491 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 3, Add Passenger(weight=31, floorNumber=1)
+17.05.2021 18:31:57.491 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 135
+17.05.2021 18:31:57.494 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 3,remove: [Passenger(weight=14, floorNumber=3)]
+17.05.2021 18:31:57.494 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=3, numberFloorFrom=1) = 1
+17.05.2021 18:31:57.494 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=3, direction=UP)
+17.05.2021 18:31:57.494 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 3, Add Passenger(weight=71, floorNumber=10)
+17.05.2021 18:31:57.495 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 170
+17.05.2021 18:31:57.495 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 3, Add Passenger(weight=32, floorNumber=8)
+17.05.2021 18:31:57.496 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 202
+17.05.2021 18:31:58.433 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 8 floor
+17.05.2021 18:31:58.434 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 7 floor
+17.05.2021 18:31:58.449 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 6,remove: [Passenger(weight=10, floorNumber=6), Passenger(weight=82, floorNumber=6)]
+17.05.2021 18:31:58.450 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=6, numberFloorFrom=8) = 1
+17.05.2021 18:31:58.450 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=6, numberFloorFrom=9) = 1
+17.05.2021 18:31:58.450 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=6, direction=DOWN)
+17.05.2021 18:31:58.451 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 6, Add Passenger(weight=100, floorNumber=1)
+17.05.2021 18:31:58.451 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 333
+17.05.2021 18:31:59.436 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 7 floor
+17.05.2021 18:31:59.436 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 6 floor
+17.05.2021 18:32:00.444 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 6 floor
+17.05.2021 18:32:00.445 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 5 floor
+17.05.2021 18:32:00.445 [Elevator #4] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=5, direction=DOWN)
+17.05.2021 18:32:00.446 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Floor: 5, Add Passenger(weight=35, floorNumber=1)
+17.05.2021 18:32:00.446 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 193
+17.05.2021 18:32:01.455 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 5 floor
+17.05.2021 18:32:01.455 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10)], Down: []
+17.05.2021 18:32:01.455 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=UP)
+17.05.2021 18:32:01.456 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=53, floorNumber=6)], Down: []
+17.05.2021 18:32:01.457 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=68, floorNumber=9), Passenger(weight=96, floorNumber=5)], Down: []
+17.05.2021 18:32:01.456 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3), Passenger(weight=104, floorNumber=8)]
+17.05.2021 18:32:01.457 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=86, floorNumber=9), Passenger(weight=90, floorNumber=8)], Down: []
+17.05.2021 18:32:01.456 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 4 floor
+17.05.2021 18:32:01.457 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=UP)
+17.05.2021 18:32:01.457 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=103, floorNumber=8), Passenger(weight=16, floorNumber=8)]
+17.05.2021 18:32:01.456 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7), Passenger(weight=25, floorNumber=3)], Down: []
+17.05.2021 18:32:01.459 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=41, floorNumber=9)], Down: []
+17.05.2021 18:32:01.460 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=27, floorNumber=10)], Down: []
+17.05.2021 18:32:01.460 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3), Passenger(weight=69, floorNumber=6)], Down: [Passenger(weight=55, floorNumber=1)]
+17.05.2021 18:32:01.518 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 3 floor
+17.05.2021 18:32:01.518 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now in the 3 floor
+17.05.2021 18:32:01.520 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 2 floor
+17.05.2021 18:32:01.520 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 4 floor
+17.05.2021 18:32:02.468 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 4 floor
+17.05.2021 18:32:02.468 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 3 floor
+17.05.2021 18:32:02.483 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 6 floor
+17.05.2021 18:32:02.483 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 5 floor
+17.05.2021 18:32:02.530 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 2,remove: [Passenger(weight=74, floorNumber=2)]
+17.05.2021 18:32:02.530 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=4, direction=UP)
+17.05.2021 18:32:02.531 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=68, floorNumber=9)
+17.05.2021 18:32:02.531 [Elevator #3] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=2, numberFloorFrom=5) = 1
+17.05.2021 18:32:02.531 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 270
+17.05.2021 18:32:02.531 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=2, direction=DOWN)
+17.05.2021 18:32:02.531 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=96, floorNumber=5)
+17.05.2021 18:32:02.531 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 366
+17.05.2021 18:32:02.531 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 2, Add Passenger(weight=55, floorNumber=1)
+17.05.2021 18:32:02.531 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 116
+17.05.2021 18:32:03.470 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Floor: 3,remove: [Passenger(weight=62, floorNumber=3)]
+17.05.2021 18:32:03.470 [Elevator #4] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=3, numberFloorFrom=10) = 1
+17.05.2021 18:32:03.486 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 5,remove: [Passenger(weight=102, floorNumber=5)]
+17.05.2021 18:32:03.486 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=5, numberFloorFrom=8) = 1
+17.05.2021 18:32:06.464 [Floor #7] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=DOWN)
+17.05.2021 18:32:06.464 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=41, floorNumber=9), Passenger(weight=15, floorNumber=8)], Down: []
+17.05.2021 18:32:06.464 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3), Passenger(weight=69, floorNumber=6), Passenger(weight=75, floorNumber=8)], Down: []
+17.05.2021 18:32:06.464 [Floor #9] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=9, direction=UP)
+17.05.2021 18:32:06.464 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=26, floorNumber=10)], Down: [Passenger(weight=103, floorNumber=8), Passenger(weight=16, floorNumber=8)]
+17.05.2021 18:32:06.464 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3), Passenger(weight=104, floorNumber=8), Passenger(weight=83, floorNumber=3)]
+17.05.2021 18:32:06.464 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=27, floorNumber=10)], Down: [Passenger(weight=92, floorNumber=5)]
+17.05.2021 18:32:06.464 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7), Passenger(weight=25, floorNumber=3), Passenger(weight=92, floorNumber=10)], Down: []
+17.05.2021 18:32:06.464 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=DOWN)
+17.05.2021 18:32:06.464 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=DOWN)
+17.05.2021 18:32:06.464 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=49, floorNumber=3)]
+17.05.2021 18:32:06.464 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=DOWN)
+17.05.2021 18:32:06.464 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=86, floorNumber=9), Passenger(weight=90, floorNumber=8)], Down: [Passenger(weight=76, floorNumber=2)]
+17.05.2021 18:32:06.464 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=53, floorNumber=6)], Down: [Passenger(weight=17, floorNumber=4)]
+17.05.2021 18:32:06.464 [Floor #8] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=8, direction=DOWN)
+17.05.2021 18:32:06.464 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10)], Down: [Passenger(weight=35, floorNumber=7)]
+17.05.2021 18:32:06.542 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 4 floor
+17.05.2021 18:32:06.542 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now in the 2 floor
+17.05.2021 18:32:06.543 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 1 floor
+17.05.2021 18:32:06.543 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 5 floor
+17.05.2021 18:32:07.487 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 3 floor
+17.05.2021 18:32:07.487 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 2 floor
+17.05.2021 18:32:07.502 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 5 floor
+17.05.2021 18:32:07.502 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 4 floor
+17.05.2021 18:32:07.549 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 5,remove: [Passenger(weight=96, floorNumber=5)]
+17.05.2021 18:32:07.549 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 1,remove: [Passenger(weight=30, floorNumber=1), Passenger(weight=31, floorNumber=1), Passenger(weight=55, floorNumber=1)]
+17.05.2021 18:32:07.549 [Elevator #3] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=1, numberFloorFrom=2) = 1
+17.05.2021 18:32:07.549 [Elevator #3] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=1, numberFloorFrom=3) = 1
+17.05.2021 18:32:07.549 [Elevator #3] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=1, numberFloorFrom=4) = 1
+17.05.2021 18:32:07.549 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=5, numberFloorFrom=4) = 1
+17.05.2021 18:32:07.549 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=5, direction=UP)
+17.05.2021 18:32:07.549 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 5, Add Passenger(weight=53, floorNumber=6)
+17.05.2021 18:32:07.549 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 323
+17.05.2021 18:32:08.501 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Floor: 2,remove: [Passenger(weight=96, floorNumber=2)]
+17.05.2021 18:32:08.501 [Elevator #4] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=2, numberFloorFrom=10) = 1
+17.05.2021 18:32:08.517 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 4,remove: [Passenger(weight=97, floorNumber=4)]
+17.05.2021 18:32:08.517 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=4, numberFloorFrom=9) = 1
+17.05.2021 18:32:08.517 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=4, direction=DOWN)
+17.05.2021 18:32:08.517 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=49, floorNumber=3)
+17.05.2021 18:32:08.517 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 183
+17.05.2021 18:32:11.466 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=41, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=98, floorNumber=4)], Down: []
+17.05.2021 18:32:11.468 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=26, floorNumber=10)], Down: [Passenger(weight=103, floorNumber=8), Passenger(weight=16, floorNumber=8), Passenger(weight=10, floorNumber=8)]
+17.05.2021 18:32:11.468 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3), Passenger(weight=104, floorNumber=8), Passenger(weight=83, floorNumber=3), Passenger(weight=53, floorNumber=8)]
+17.05.2021 18:32:11.468 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7), Passenger(weight=25, floorNumber=3), Passenger(weight=92, floorNumber=10)], Down: []
+17.05.2021 18:32:11.469 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3), Passenger(weight=69, floorNumber=6), Passenger(weight=75, floorNumber=8)], Down: []
+17.05.2021 18:32:11.469 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=27, floorNumber=10)], Down: [Passenger(weight=92, floorNumber=5), Passenger(weight=40, floorNumber=5)]
+17.05.2021 18:32:11.470 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=UP)
+17.05.2021 18:32:11.470 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=37, floorNumber=10)], Down: []
+17.05.2021 18:32:11.472 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=UP)
+17.05.2021 18:32:11.474 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=60, floorNumber=6)], Down: [Passenger(weight=17, floorNumber=4)]
+17.05.2021 18:32:11.472 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=86, floorNumber=9), Passenger(weight=90, floorNumber=8), Passenger(weight=80, floorNumber=9)], Down: [Passenger(weight=76, floorNumber=2)]
+17.05.2021 18:32:11.474 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10)], Down: [Passenger(weight=35, floorNumber=7), Passenger(weight=100, floorNumber=5)]
+17.05.2021 18:32:11.583 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 5 floor
+17.05.2021 18:32:11.583 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 6 floor
+17.05.2021 18:32:12.536 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 2 floor
+17.05.2021 18:32:12.536 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 1 floor
+17.05.2021 18:32:12.552 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 4 floor
+17.05.2021 18:32:12.552 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 3 floor
+17.05.2021 18:32:12.599 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 6,remove: [Passenger(weight=53, floorNumber=6)]
+17.05.2021 18:32:12.599 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=6, numberFloorFrom=5) = 1
+17.05.2021 18:32:12.599 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=6, direction=UP)
+17.05.2021 18:32:12.599 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 6, Add Passenger(weight=86, floorNumber=9)
+17.05.2021 18:32:12.599 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 356
+17.05.2021 18:32:12.599 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 6, Add Passenger(weight=90, floorNumber=8)
+17.05.2021 18:32:12.599 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 446
+17.05.2021 18:32:12.599 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=UP)
+17.05.2021 18:32:13.551 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Floor: 1,remove: [Passenger(weight=35, floorNumber=1)]
+17.05.2021 18:32:13.551 [Elevator #4] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=1, numberFloorFrom=5) = 1
+17.05.2021 18:32:13.567 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 3,remove: [Passenger(weight=34, floorNumber=3), Passenger(weight=49, floorNumber=3)]
+17.05.2021 18:32:13.567 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=3, numberFloorFrom=7) = 1
+17.05.2021 18:32:13.567 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=3, numberFloorFrom=4) = 1
+17.05.2021 18:32:16.468 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=41, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=98, floorNumber=4), Passenger(weight=92, floorNumber=5)], Down: []
+17.05.2021 18:32:16.483 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=DOWN)
+17.05.2021 18:32:16.483 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=27, floorNumber=10)], Down: [Passenger(weight=92, floorNumber=5), Passenger(weight=40, floorNumber=5), Passenger(weight=78, floorNumber=2)]
+17.05.2021 18:32:16.483 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3), Passenger(weight=69, floorNumber=6), Passenger(weight=75, floorNumber=8), Passenger(weight=60, floorNumber=9)], Down: []
+17.05.2021 18:32:16.483 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=37, floorNumber=10)], Down: [Passenger(weight=51, floorNumber=3)]
+17.05.2021 18:32:16.483 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=26, floorNumber=10)], Down: [Passenger(weight=103, floorNumber=8), Passenger(weight=16, floorNumber=8), Passenger(weight=10, floorNumber=8), Passenger(weight=63, floorNumber=5)]
+17.05.2021 18:32:16.483 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7), Passenger(weight=25, floorNumber=3), Passenger(weight=92, floorNumber=10), Passenger(weight=68, floorNumber=7)], Down: []
+17.05.2021 18:32:16.483 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3), Passenger(weight=104, floorNumber=8), Passenger(weight=83, floorNumber=3), Passenger(weight=53, floorNumber=8), Passenger(weight=17, floorNumber=2)]
+17.05.2021 18:32:16.483 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=60, floorNumber=6)], Down: [Passenger(weight=17, floorNumber=4), Passenger(weight=79, floorNumber=4)]
+17.05.2021 18:32:16.483 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=80, floorNumber=9)], Down: [Passenger(weight=76, floorNumber=2), Passenger(weight=16, floorNumber=3)]
+17.05.2021 18:32:16.483 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10)], Down: [Passenger(weight=35, floorNumber=7), Passenger(weight=100, floorNumber=5), Passenger(weight=96, floorNumber=6)]
+17.05.2021 18:32:16.624 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 6 floor
+17.05.2021 18:32:16.624 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 7 floor
+17.05.2021 18:32:17.593 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 3 floor
+17.05.2021 18:32:17.593 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 2 floor
+17.05.2021 18:32:17.639 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=7, direction=UP)
+17.05.2021 18:32:17.639 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=UP)
+17.05.2021 18:32:18.600 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 2 floor
+17.05.2021 18:32:18.600 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 1 floor
+17.05.2021 18:32:19.613 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 1,remove: [Passenger(weight=100, floorNumber=1)]
+17.05.2021 18:32:19.614 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=1, numberFloorFrom=6) = 1
+17.05.2021 18:32:21.473 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=41, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=98, floorNumber=4), Passenger(weight=92, floorNumber=5), Passenger(weight=67, floorNumber=6)], Down: []
+17.05.2021 18:32:21.491 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=27, floorNumber=10)], Down: [Passenger(weight=92, floorNumber=5), Passenger(weight=40, floorNumber=5), Passenger(weight=78, floorNumber=2), Passenger(weight=40, floorNumber=5)]
+17.05.2021 18:32:21.494 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3), Passenger(weight=69, floorNumber=6), Passenger(weight=75, floorNumber=8), Passenger(weight=60, floorNumber=9)], Down: []
+17.05.2021 18:32:21.497 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=37, floorNumber=10)], Down: [Passenger(weight=51, floorNumber=3), Passenger(weight=66, floorNumber=2)]
+17.05.2021 18:32:21.497 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=26, floorNumber=10)], Down: [Passenger(weight=103, floorNumber=8), Passenger(weight=16, floorNumber=8), Passenger(weight=10, floorNumber=8), Passenger(weight=63, floorNumber=5), Passenger(weight=74, floorNumber=7)]
+17.05.2021 18:32:21.498 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7), Passenger(weight=25, floorNumber=3), Passenger(weight=92, floorNumber=10), Passenger(weight=68, floorNumber=7), Passenger(weight=54, floorNumber=2)], Down: []
+17.05.2021 18:32:21.498 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3), Passenger(weight=104, floorNumber=8), Passenger(weight=83, floorNumber=3), Passenger(weight=53, floorNumber=8), Passenger(weight=17, floorNumber=2), Passenger(weight=88, floorNumber=6)]
+17.05.2021 18:32:21.501 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=80, floorNumber=9)], Down: [Passenger(weight=76, floorNumber=2), Passenger(weight=16, floorNumber=3), Passenger(weight=87, floorNumber=5)]
+17.05.2021 18:32:21.501 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10)], Down: [Passenger(weight=35, floorNumber=7), Passenger(weight=100, floorNumber=5), Passenger(weight=96, floorNumber=6), Passenger(weight=86, floorNumber=4)]
+17.05.2021 18:32:21.501 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=60, floorNumber=6), Passenger(weight=67, floorNumber=9)], Down: [Passenger(weight=17, floorNumber=4), Passenger(weight=79, floorNumber=4)]
+17.05.2021 18:32:21.663 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 7 floor
+17.05.2021 18:32:21.663 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 8 floor
+17.05.2021 18:32:22.677 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 8,remove: [Passenger(weight=99, floorNumber=8), Passenger(weight=32, floorNumber=8), Passenger(weight=90, floorNumber=8)]
+17.05.2021 18:32:22.677 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=8, numberFloorFrom=2) = 1
+17.05.2021 18:32:22.677 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=8, numberFloorFrom=3) = 1
+17.05.2021 18:32:22.677 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=8, numberFloorFrom=6) = 1
+17.05.2021 18:32:22.678 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=8, direction=UP)
+17.05.2021 18:32:22.678 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 8, Add Passenger(weight=66, floorNumber=10)
+17.05.2021 18:32:22.678 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 291
+17.05.2021 18:32:26.475 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=41, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=98, floorNumber=4), Passenger(weight=92, floorNumber=5), Passenger(weight=67, floorNumber=6), Passenger(weight=106, floorNumber=6)], Down: []
+17.05.2021 18:32:26.506 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=37, floorNumber=10), Passenger(weight=97, floorNumber=8)], Down: [Passenger(weight=51, floorNumber=3), Passenger(weight=66, floorNumber=2)]
+17.05.2021 18:32:26.506 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=27, floorNumber=10), Passenger(weight=39, floorNumber=8)], Down: [Passenger(weight=92, floorNumber=5), Passenger(weight=40, floorNumber=5), Passenger(weight=78, floorNumber=2), Passenger(weight=40, floorNumber=5)]
+17.05.2021 18:32:26.506 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=35, floorNumber=7), Passenger(weight=100, floorNumber=5), Passenger(weight=96, floorNumber=6), Passenger(weight=86, floorNumber=4), Passenger(weight=93, floorNumber=6)]
+17.05.2021 18:32:26.506 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=26, floorNumber=10)], Down: [Passenger(weight=103, floorNumber=8), Passenger(weight=16, floorNumber=8), Passenger(weight=10, floorNumber=8), Passenger(weight=63, floorNumber=5), Passenger(weight=74, floorNumber=7), Passenger(weight=86, floorNumber=1)]
+17.05.2021 18:32:26.506 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3), Passenger(weight=69, floorNumber=6), Passenger(weight=75, floorNumber=8), Passenger(weight=60, floorNumber=9), Passenger(weight=74, floorNumber=8)], Down: []
+17.05.2021 18:32:26.506 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=60, floorNumber=6), Passenger(weight=67, floorNumber=9)], Down: [Passenger(weight=17, floorNumber=4), Passenger(weight=79, floorNumber=4), Passenger(weight=51, floorNumber=2)]
+17.05.2021 18:32:26.506 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=80, floorNumber=9)], Down: [Passenger(weight=76, floorNumber=2), Passenger(weight=16, floorNumber=3), Passenger(weight=87, floorNumber=5), Passenger(weight=11, floorNumber=5)]
+17.05.2021 18:32:26.506 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3), Passenger(weight=104, floorNumber=8), Passenger(weight=83, floorNumber=3), Passenger(weight=53, floorNumber=8), Passenger(weight=17, floorNumber=2), Passenger(weight=88, floorNumber=6), Passenger(weight=28, floorNumber=2)]
+17.05.2021 18:32:26.507 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7), Passenger(weight=25, floorNumber=3), Passenger(weight=92, floorNumber=10), Passenger(weight=68, floorNumber=7), Passenger(weight=54, floorNumber=2), Passenger(weight=57, floorNumber=10)], Down: []
+17.05.2021 18:32:26.707 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 8 floor
+17.05.2021 18:32:26.707 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 9 floor
+17.05.2021 18:32:27.708 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 9,remove: [Passenger(weight=68, floorNumber=9), Passenger(weight=86, floorNumber=9)]
+17.05.2021 18:32:27.709 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=9, numberFloorFrom=4) = 1
+17.05.2021 18:32:27.709 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=9, numberFloorFrom=6) = 1
+17.05.2021 18:32:27.709 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=9, direction=UP)
+17.05.2021 18:32:27.709 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 9, Add Passenger(weight=26, floorNumber=10)
+17.05.2021 18:32:27.709 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 163
+17.05.2021 18:32:31.482 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=41, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=98, floorNumber=4), Passenger(weight=92, floorNumber=5), Passenger(weight=67, floorNumber=6), Passenger(weight=106, floorNumber=6), Passenger(weight=10, floorNumber=10)], Down: []
+17.05.2021 18:32:31.517 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=37, floorNumber=10), Passenger(weight=97, floorNumber=8), Passenger(weight=43, floorNumber=5)], Down: [Passenger(weight=51, floorNumber=3), Passenger(weight=66, floorNumber=2)]
+17.05.2021 18:32:31.517 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3), Passenger(weight=104, floorNumber=8), Passenger(weight=83, floorNumber=3), Passenger(weight=53, floorNumber=8), Passenger(weight=17, floorNumber=2), Passenger(weight=88, floorNumber=6), Passenger(weight=28, floorNumber=2), Passenger(weight=76, floorNumber=5)]
+17.05.2021 18:32:31.517 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=27, floorNumber=10), Passenger(weight=39, floorNumber=8), Passenger(weight=25, floorNumber=9)], Down: [Passenger(weight=92, floorNumber=5), Passenger(weight=40, floorNumber=5), Passenger(weight=78, floorNumber=2), Passenger(weight=40, floorNumber=5)]
+17.05.2021 18:32:31.517 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7), Passenger(weight=25, floorNumber=3), Passenger(weight=92, floorNumber=10), Passenger(weight=68, floorNumber=7), Passenger(weight=54, floorNumber=2), Passenger(weight=57, floorNumber=10), Passenger(weight=77, floorNumber=2)], Down: []
+17.05.2021 18:32:31.517 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=35, floorNumber=7), Passenger(weight=100, floorNumber=5), Passenger(weight=96, floorNumber=6), Passenger(weight=86, floorNumber=4), Passenger(weight=93, floorNumber=6), Passenger(weight=18, floorNumber=1)]
+17.05.2021 18:32:31.517 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=103, floorNumber=8), Passenger(weight=16, floorNumber=8), Passenger(weight=10, floorNumber=8), Passenger(weight=63, floorNumber=5), Passenger(weight=74, floorNumber=7), Passenger(weight=86, floorNumber=1), Passenger(weight=96, floorNumber=2)]
+17.05.2021 18:32:31.517 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=DOWN)
+17.05.2021 18:32:31.517 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3), Passenger(weight=69, floorNumber=6), Passenger(weight=75, floorNumber=8), Passenger(weight=60, floorNumber=9), Passenger(weight=74, floorNumber=8)], Down: [Passenger(weight=53, floorNumber=1)]
+17.05.2021 18:32:31.517 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=80, floorNumber=9)], Down: [Passenger(weight=76, floorNumber=2), Passenger(weight=16, floorNumber=3), Passenger(weight=87, floorNumber=5), Passenger(weight=11, floorNumber=5), Passenger(weight=99, floorNumber=2)]
+17.05.2021 18:32:31.517 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=60, floorNumber=6), Passenger(weight=67, floorNumber=9)], Down: [Passenger(weight=17, floorNumber=4), Passenger(weight=79, floorNumber=4), Passenger(weight=51, floorNumber=2), Passenger(weight=21, floorNumber=2)]
+17.05.2021 18:32:31.735 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 9 floor
+17.05.2021 18:32:31.735 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 10 floor
+17.05.2021 18:32:32.746 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 10,remove: [Passenger(weight=71, floorNumber=10), Passenger(weight=66, floorNumber=10), Passenger(weight=26, floorNumber=10)]
+17.05.2021 18:32:32.746 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=10, numberFloorFrom=9) = 1
+17.05.2021 18:32:32.746 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=10, numberFloorFrom=3) = 1
+17.05.2021 18:32:32.746 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=10, numberFloorFrom=8) = 1
+17.05.2021 18:32:36.491 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=41, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=98, floorNumber=4), Passenger(weight=92, floorNumber=5), Passenger(weight=67, floorNumber=6), Passenger(weight=106, floorNumber=6), Passenger(weight=10, floorNumber=10), Passenger(weight=85, floorNumber=6)], Down: []
+17.05.2021 18:32:36.522 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3), Passenger(weight=104, floorNumber=8), Passenger(weight=83, floorNumber=3), Passenger(weight=53, floorNumber=8), Passenger(weight=17, floorNumber=2), Passenger(weight=88, floorNumber=6), Passenger(weight=28, floorNumber=2), Passenger(weight=76, floorNumber=5), Passenger(weight=90, floorNumber=5)]
+17.05.2021 18:32:36.522 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=27, floorNumber=10), Passenger(weight=39, floorNumber=8), Passenger(weight=25, floorNumber=9), Passenger(weight=65, floorNumber=10)], Down: [Passenger(weight=92, floorNumber=5), Passenger(weight=40, floorNumber=5), Passenger(weight=78, floorNumber=2), Passenger(weight=40, floorNumber=5)]
+17.05.2021 18:32:36.522 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=103, floorNumber=8), Passenger(weight=16, floorNumber=8), Passenger(weight=10, floorNumber=8), Passenger(weight=63, floorNumber=5), Passenger(weight=74, floorNumber=7), Passenger(weight=86, floorNumber=1), Passenger(weight=96, floorNumber=2), Passenger(weight=49, floorNumber=6)]
+17.05.2021 18:32:36.522 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=35, floorNumber=7), Passenger(weight=100, floorNumber=5), Passenger(weight=96, floorNumber=6), Passenger(weight=86, floorNumber=4), Passenger(weight=93, floorNumber=6), Passenger(weight=18, floorNumber=1), Passenger(weight=82, floorNumber=4)]
+17.05.2021 18:32:36.522 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=37, floorNumber=10), Passenger(weight=97, floorNumber=8), Passenger(weight=43, floorNumber=5), Passenger(weight=76, floorNumber=7)], Down: [Passenger(weight=51, floorNumber=3), Passenger(weight=66, floorNumber=2)]
+17.05.2021 18:32:36.522 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7), Passenger(weight=25, floorNumber=3), Passenger(weight=92, floorNumber=10), Passenger(weight=68, floorNumber=7), Passenger(weight=54, floorNumber=2), Passenger(weight=57, floorNumber=10), Passenger(weight=77, floorNumber=2), Passenger(weight=23, floorNumber=9)], Down: []
+17.05.2021 18:32:36.522 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3), Passenger(weight=69, floorNumber=6), Passenger(weight=75, floorNumber=8), Passenger(weight=60, floorNumber=9), Passenger(weight=74, floorNumber=8), Passenger(weight=70, floorNumber=10)], Down: [Passenger(weight=53, floorNumber=1)]
+17.05.2021 18:32:36.522 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=80, floorNumber=9)], Down: [Passenger(weight=76, floorNumber=2), Passenger(weight=16, floorNumber=3), Passenger(weight=87, floorNumber=5), Passenger(weight=11, floorNumber=5), Passenger(weight=99, floorNumber=2)]
+17.05.2021 18:32:36.522 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=60, floorNumber=6), Passenger(weight=67, floorNumber=9), Passenger(weight=37, floorNumber=9)], Down: [Passenger(weight=17, floorNumber=4), Passenger(weight=79, floorNumber=4), Passenger(weight=51, floorNumber=2), Passenger(weight=21, floorNumber=2)]
+17.05.2021 18:32:41.501 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=41, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=98, floorNumber=4), Passenger(weight=92, floorNumber=5), Passenger(weight=67, floorNumber=6), Passenger(weight=106, floorNumber=6), Passenger(weight=10, floorNumber=10), Passenger(weight=85, floorNumber=6), Passenger(weight=14, floorNumber=10)], Down: []
+17.05.2021 18:32:41.531 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=37, floorNumber=10), Passenger(weight=97, floorNumber=8), Passenger(weight=43, floorNumber=5), Passenger(weight=76, floorNumber=7)], Down: [Passenger(weight=51, floorNumber=3), Passenger(weight=66, floorNumber=2)]
+17.05.2021 18:32:41.531 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=60, floorNumber=6), Passenger(weight=67, floorNumber=9), Passenger(weight=37, floorNumber=9)], Down: [Passenger(weight=17, floorNumber=4), Passenger(weight=79, floorNumber=4), Passenger(weight=51, floorNumber=2), Passenger(weight=21, floorNumber=2), Passenger(weight=68, floorNumber=2)]
+17.05.2021 18:32:41.531 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=27, floorNumber=10), Passenger(weight=39, floorNumber=8), Passenger(weight=25, floorNumber=9), Passenger(weight=65, floorNumber=10)], Down: [Passenger(weight=92, floorNumber=5), Passenger(weight=40, floorNumber=5), Passenger(weight=78, floorNumber=2), Passenger(weight=40, floorNumber=5), Passenger(weight=23, floorNumber=5)]
+17.05.2021 18:32:41.532 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=35, floorNumber=7), Passenger(weight=100, floorNumber=5), Passenger(weight=96, floorNumber=6), Passenger(weight=86, floorNumber=4), Passenger(weight=93, floorNumber=6), Passenger(weight=18, floorNumber=1), Passenger(weight=82, floorNumber=4), Passenger(weight=95, floorNumber=2)]
+17.05.2021 18:32:41.532 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3), Passenger(weight=104, floorNumber=8), Passenger(weight=83, floorNumber=3), Passenger(weight=53, floorNumber=8), Passenger(weight=17, floorNumber=2), Passenger(weight=88, floorNumber=6), Passenger(weight=28, floorNumber=2), Passenger(weight=76, floorNumber=5), Passenger(weight=90, floorNumber=5), Passenger(weight=109, floorNumber=3)]
+17.05.2021 18:32:41.532 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7), Passenger(weight=25, floorNumber=3), Passenger(weight=92, floorNumber=10), Passenger(weight=68, floorNumber=7), Passenger(weight=54, floorNumber=2), Passenger(weight=57, floorNumber=10), Passenger(weight=77, floorNumber=2), Passenger(weight=23, floorNumber=9), Passenger(weight=84, floorNumber=7)], Down: []
+17.05.2021 18:32:41.533 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=103, floorNumber=8), Passenger(weight=16, floorNumber=8), Passenger(weight=10, floorNumber=8), Passenger(weight=63, floorNumber=5), Passenger(weight=74, floorNumber=7), Passenger(weight=86, floorNumber=1), Passenger(weight=96, floorNumber=2), Passenger(weight=49, floorNumber=6), Passenger(weight=80, floorNumber=3)]
+17.05.2021 18:32:41.533 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3), Passenger(weight=69, floorNumber=6), Passenger(weight=75, floorNumber=8), Passenger(weight=60, floorNumber=9), Passenger(weight=74, floorNumber=8), Passenger(weight=70, floorNumber=10), Passenger(weight=79, floorNumber=10)], Down: [Passenger(weight=53, floorNumber=1)]
+17.05.2021 18:32:41.533 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=80, floorNumber=9)], Down: [Passenger(weight=76, floorNumber=2), Passenger(weight=16, floorNumber=3), Passenger(weight=87, floorNumber=5), Passenger(weight=11, floorNumber=5), Passenger(weight=99, floorNumber=2), Passenger(weight=43, floorNumber=4)]
+17.05.2021 18:32:46.503 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=41, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=98, floorNumber=4), Passenger(weight=92, floorNumber=5), Passenger(weight=67, floorNumber=6), Passenger(weight=106, floorNumber=6), Passenger(weight=10, floorNumber=10), Passenger(weight=85, floorNumber=6), Passenger(weight=14, floorNumber=10), Passenger(weight=15, floorNumber=6)], Down: []
+17.05.2021 18:32:46.533 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7), Passenger(weight=25, floorNumber=3), Passenger(weight=92, floorNumber=10), Passenger(weight=68, floorNumber=7), Passenger(weight=54, floorNumber=2), Passenger(weight=57, floorNumber=10), Passenger(weight=77, floorNumber=2), Passenger(weight=23, floorNumber=9), Passenger(weight=84, floorNumber=7), Passenger(weight=83, floorNumber=8)], Down: []
+17.05.2021 18:32:46.533 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=35, floorNumber=7), Passenger(weight=100, floorNumber=5), Passenger(weight=96, floorNumber=6), Passenger(weight=86, floorNumber=4), Passenger(weight=93, floorNumber=6), Passenger(weight=18, floorNumber=1), Passenger(weight=82, floorNumber=4), Passenger(weight=95, floorNumber=2)]
+17.05.2021 18:32:46.533 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=103, floorNumber=8), Passenger(weight=16, floorNumber=8), Passenger(weight=10, floorNumber=8), Passenger(weight=63, floorNumber=5), Passenger(weight=74, floorNumber=7), Passenger(weight=86, floorNumber=1), Passenger(weight=96, floorNumber=2), Passenger(weight=49, floorNumber=6), Passenger(weight=80, floorNumber=3), Passenger(weight=88, floorNumber=2)]
+17.05.2021 18:32:46.533 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3), Passenger(weight=69, floorNumber=6), Passenger(weight=75, floorNumber=8), Passenger(weight=60, floorNumber=9), Passenger(weight=74, floorNumber=8), Passenger(weight=70, floorNumber=10), Passenger(weight=79, floorNumber=10), Passenger(weight=88, floorNumber=6)], Down: [Passenger(weight=53, floorNumber=1)]
+17.05.2021 18:32:46.533 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3), Passenger(weight=104, floorNumber=8), Passenger(weight=83, floorNumber=3), Passenger(weight=53, floorNumber=8), Passenger(weight=17, floorNumber=2), Passenger(weight=88, floorNumber=6), Passenger(weight=28, floorNumber=2), Passenger(weight=76, floorNumber=5), Passenger(weight=90, floorNumber=5), Passenger(weight=109, floorNumber=3), Passenger(weight=26, floorNumber=4)]
+17.05.2021 18:32:46.535 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=60, floorNumber=6), Passenger(weight=67, floorNumber=9), Passenger(weight=37, floorNumber=9), Passenger(weight=107, floorNumber=6)], Down: [Passenger(weight=17, floorNumber=4), Passenger(weight=79, floorNumber=4), Passenger(weight=51, floorNumber=2), Passenger(weight=21, floorNumber=2), Passenger(weight=68, floorNumber=2)]
+17.05.2021 18:32:46.535 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=37, floorNumber=10), Passenger(weight=97, floorNumber=8), Passenger(weight=43, floorNumber=5), Passenger(weight=76, floorNumber=7), Passenger(weight=93, floorNumber=5)], Down: [Passenger(weight=51, floorNumber=3), Passenger(weight=66, floorNumber=2)]
+17.05.2021 18:32:46.536 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=27, floorNumber=10), Passenger(weight=39, floorNumber=8), Passenger(weight=25, floorNumber=9), Passenger(weight=65, floorNumber=10)], Down: [Passenger(weight=92, floorNumber=5), Passenger(weight=40, floorNumber=5), Passenger(weight=78, floorNumber=2), Passenger(weight=40, floorNumber=5), Passenger(weight=23, floorNumber=5), Passenger(weight=41, floorNumber=6)]
+17.05.2021 18:32:46.537 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=80, floorNumber=9), Passenger(weight=85, floorNumber=9)], Down: [Passenger(weight=76, floorNumber=2), Passenger(weight=16, floorNumber=3), Passenger(weight=87, floorNumber=5), Passenger(weight=11, floorNumber=5), Passenger(weight=99, floorNumber=2), Passenger(weight=43, floorNumber=4)]
+17.05.2021 18:32:51.504 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=DOWN)
+17.05.2021 18:32:51.505 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=41, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=98, floorNumber=4), Passenger(weight=92, floorNumber=5), Passenger(weight=67, floorNumber=6), Passenger(weight=106, floorNumber=6), Passenger(weight=10, floorNumber=10), Passenger(weight=85, floorNumber=6), Passenger(weight=14, floorNumber=10), Passenger(weight=15, floorNumber=6)], Down: [Passenger(weight=108, floorNumber=2)]
+17.05.2021 18:32:51.534 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=103, floorNumber=8), Passenger(weight=16, floorNumber=8), Passenger(weight=10, floorNumber=8), Passenger(weight=63, floorNumber=5), Passenger(weight=74, floorNumber=7), Passenger(weight=86, floorNumber=1), Passenger(weight=96, floorNumber=2), Passenger(weight=49, floorNumber=6), Passenger(weight=80, floorNumber=3), Passenger(weight=88, floorNumber=2), Passenger(weight=17, floorNumber=7)]
+17.05.2021 18:32:51.535 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=93, floorNumber=7), Passenger(weight=97, floorNumber=7), Passenger(weight=25, floorNumber=3), Passenger(weight=92, floorNumber=10), Passenger(weight=68, floorNumber=7), Passenger(weight=54, floorNumber=2), Passenger(weight=57, floorNumber=10), Passenger(weight=77, floorNumber=2), Passenger(weight=23, floorNumber=9), Passenger(weight=84, floorNumber=7), Passenger(weight=83, floorNumber=8), Passenger(weight=79, floorNumber=7)], Down: []
+17.05.2021 18:32:51.536 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=27, floorNumber=3), Passenger(weight=69, floorNumber=6), Passenger(weight=75, floorNumber=8), Passenger(weight=60, floorNumber=9), Passenger(weight=74, floorNumber=8), Passenger(weight=70, floorNumber=10), Passenger(weight=79, floorNumber=10), Passenger(weight=88, floorNumber=6), Passenger(weight=49, floorNumber=5)], Down: [Passenger(weight=53, floorNumber=1)]
+17.05.2021 18:32:51.536 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=35, floorNumber=7), Passenger(weight=100, floorNumber=5), Passenger(weight=96, floorNumber=6), Passenger(weight=86, floorNumber=4), Passenger(weight=93, floorNumber=6), Passenger(weight=18, floorNumber=1), Passenger(weight=82, floorNumber=4), Passenger(weight=95, floorNumber=2), Passenger(weight=62, floorNumber=5)]
+17.05.2021 18:32:51.536 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=66, floorNumber=3), Passenger(weight=104, floorNumber=8), Passenger(weight=83, floorNumber=3), Passenger(weight=53, floorNumber=8), Passenger(weight=17, floorNumber=2), Passenger(weight=88, floorNumber=6), Passenger(weight=28, floorNumber=2), Passenger(weight=76, floorNumber=5), Passenger(weight=90, floorNumber=5), Passenger(weight=109, floorNumber=3), Passenger(weight=26, floorNumber=4), Passenger(weight=96, floorNumber=8)]
+17.05.2021 18:32:51.536 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=60, floorNumber=6), Passenger(weight=67, floorNumber=9), Passenger(weight=37, floorNumber=9), Passenger(weight=107, floorNumber=6)], Down: [Passenger(weight=17, floorNumber=4), Passenger(weight=79, floorNumber=4), Passenger(weight=51, floorNumber=2), Passenger(weight=21, floorNumber=2), Passenger(weight=68, floorNumber=2), Passenger(weight=13, floorNumber=3)]
+17.05.2021 18:32:51.536 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=37, floorNumber=10), Passenger(weight=97, floorNumber=8), Passenger(weight=43, floorNumber=5), Passenger(weight=76, floorNumber=7), Passenger(weight=93, floorNumber=5)], Down: [Passenger(weight=51, floorNumber=3), Passenger(weight=66, floorNumber=2), Passenger(weight=48, floorNumber=2)]
+17.05.2021 18:32:51.551 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=80, floorNumber=9), Passenger(weight=85, floorNumber=9)], Down: [Passenger(weight=76, floorNumber=2), Passenger(weight=16, floorNumber=3), Passenger(weight=87, floorNumber=5), Passenger(weight=11, floorNumber=5), Passenger(weight=99, floorNumber=2), Passenger(weight=43, floorNumber=4), Passenger(weight=14, floorNumber=2)]
+17.05.2021 18:32:51.551 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=67, floorNumber=9), Passenger(weight=15, floorNumber=8), Passenger(weight=27, floorNumber=10), Passenger(weight=39, floorNumber=8), Passenger(weight=25, floorNumber=9), Passenger(weight=65, floorNumber=10)], Down: [Passenger(weight=92, floorNumber=5), Passenger(weight=40, floorNumber=5), Passenger(weight=78, floorNumber=2), Passenger(weight=40, floorNumber=5), Passenger(weight=23, floorNumber=5), Passenger(weight=41, floorNumber=6), Passenger(weight=95, floorNumber=1)]
+17.05.2021 20:34:24.597 [main] [INFO ]  by.kuzmich.models.Building - The building begins to be created
+17.05.2021 20:34:24.884 [main] [INFO ]  by.kuzmich.models.Building - The building was created
+17.05.2021 20:34:24.900 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: []
+17.05.2021 20:34:24.912 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=2, direction=UP)
+17.05.2021 20:34:24.912 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=UP)
+17.05.2021 20:34:24.921 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=UP)
+17.05.2021 20:34:24.921 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=5, direction=UP)
+17.05.2021 20:34:24.921 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=DOWN)
+17.05.2021 20:34:24.921 [Floor #10] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=10, direction=DOWN)
+17.05.2021 20:34:24.921 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=UP)
+17.05.2021 20:34:24.921 [Floor #7] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=DOWN)
+17.05.2021 20:34:24.921 [Floor #1] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=1, direction=UP)
+17.05.2021 20:34:24.921 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=1, direction=UP)
+17.05.2021 20:34:24.921 [Floor #9] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=9, direction=UP)
+17.05.2021 20:34:24.921 [Floor #8] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=8, direction=UP)
+17.05.2021 20:34:24.921 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=94, floorNumber=8)], Down: []
+17.05.2021 20:34:24.921 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10)], Down: []
+17.05.2021 20:34:24.921 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=42, floorNumber=9)]
+17.05.2021 20:34:24.921 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=24, floorNumber=5)], Down: []
+17.05.2021 20:34:24.921 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=11, floorNumber=6)], Down: []
+17.05.2021 20:34:24.921 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=78, floorNumber=3)]
+17.05.2021 20:34:24.921 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=10)], Down: []
+17.05.2021 20:34:24.921 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=86, floorNumber=9)], Down: []
+17.05.2021 20:34:24.921 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=85, floorNumber=1)]
+17.05.2021 20:34:25.939 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 1, Add Passenger(weight=94, floorNumber=8)
+17.05.2021 20:34:25.939 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 94
+17.05.2021 20:34:29.915 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=UP)
+17.05.2021 20:34:29.915 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=54, floorNumber=6)], Down: []
+17.05.2021 20:34:29.933 [Floor #9] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=9, direction=DOWN)
+17.05.2021 20:34:29.933 [Floor #1] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=1, direction=UP)
+17.05.2021 20:34:29.934 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=76, floorNumber=3)], Down: []
+17.05.2021 20:34:29.934 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=UP)
+17.05.2021 20:34:29.934 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=24, floorNumber=5), Passenger(weight=24, floorNumber=5)], Down: []
+17.05.2021 20:34:29.934 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=42, floorNumber=9), Passenger(weight=78, floorNumber=3)]
+17.05.2021 20:34:29.934 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=DOWN)
+17.05.2021 20:34:29.934 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=11, floorNumber=6)], Down: [Passenger(weight=22, floorNumber=3)]
+17.05.2021 20:34:29.934 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=78, floorNumber=3), Passenger(weight=40, floorNumber=5)]
+17.05.2021 20:34:29.934 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10)], Down: [Passenger(weight=85, floorNumber=8)]
+17.05.2021 20:34:29.934 [Floor #8] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=8, direction=DOWN)
+17.05.2021 20:34:29.935 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=10)], Down: [Passenger(weight=47, floorNumber=6)]
+17.05.2021 20:34:29.935 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=DOWN)
+17.05.2021 20:34:29.936 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=86, floorNumber=9)], Down: [Passenger(weight=90, floorNumber=2)]
+17.05.2021 20:34:29.936 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=85, floorNumber=1), Passenger(weight=29, floorNumber=5)]
+17.05.2021 20:34:29.967 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now on the 1 floor
+17.05.2021 20:34:29.967 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now on the 1 floor
+17.05.2021 20:34:29.967 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 1 floor
+17.05.2021 20:34:29.968 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 2 floor
+17.05.2021 20:34:29.968 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 2 floor
+17.05.2021 20:34:29.968 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 2 floor
+17.05.2021 20:34:30.980 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=2, direction=UP)
+17.05.2021 20:34:30.980 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 2, Add Passenger(weight=24, floorNumber=5)
+17.05.2021 20:34:30.980 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 2, Add Passenger(weight=24, floorNumber=5)
+17.05.2021 20:34:30.982 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 24
+17.05.2021 20:34:30.982 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 118
+17.05.2021 20:34:30.983 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=6, direction=DOWN)
+17.05.2021 20:34:30.983 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now on the 2 floor
+17.05.2021 20:34:34.919 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=54, floorNumber=6), Passenger(weight=22, floorNumber=5)], Down: []
+17.05.2021 20:34:34.935 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=11, floorNumber=6)], Down: [Passenger(weight=22, floorNumber=3), Passenger(weight=54, floorNumber=3)]
+17.05.2021 20:34:34.935 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=UP)
+17.05.2021 20:34:34.935 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=76, floorNumber=3), Passenger(weight=51, floorNumber=3)], Down: []
+17.05.2021 20:34:34.936 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=81, floorNumber=3)], Down: []
+17.05.2021 20:34:34.936 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=UP)
+17.05.2021 20:34:34.936 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=42, floorNumber=9), Passenger(weight=78, floorNumber=3), Passenger(weight=50, floorNumber=1)]
+17.05.2021 20:34:34.936 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=15, floorNumber=10)], Down: [Passenger(weight=78, floorNumber=3), Passenger(weight=40, floorNumber=5)]
+17.05.2021 20:34:34.936 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10)], Down: [Passenger(weight=85, floorNumber=8)]
+17.05.2021 20:34:34.952 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=UP)
+17.05.2021 20:34:34.952 [Floor #7] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=UP)
+17.05.2021 20:34:34.952 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=9)], Down: [Passenger(weight=85, floorNumber=1), Passenger(weight=29, floorNumber=5)]
+17.05.2021 20:34:34.952 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=10), Passenger(weight=92, floorNumber=10)], Down: [Passenger(weight=47, floorNumber=6)]
+17.05.2021 20:34:34.952 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=86, floorNumber=9), Passenger(weight=59, floorNumber=6)], Down: [Passenger(weight=90, floorNumber=2)]
+17.05.2021 20:34:34.999 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to 6 floor
+17.05.2021 20:34:34.999 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 6, Add Passenger(weight=78, floorNumber=3)
+17.05.2021 20:34:34.999 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 78
+17.05.2021 20:34:34.999 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 6, Add Passenger(weight=40, floorNumber=5)
+17.05.2021 20:34:34.999 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 118
+17.05.2021 20:34:35.014 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now on the 2 floor
+17.05.2021 20:34:35.014 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 2 floor
+17.05.2021 20:34:35.015 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 3 floor
+17.05.2021 20:34:35.015 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 3 floor
+17.05.2021 20:34:36.030 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=3, direction=UP)
+17.05.2021 20:34:36.030 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 3, Add Passenger(weight=54, floorNumber=6)
+17.05.2021 20:34:36.032 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 172
+17.05.2021 20:34:36.032 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 3, Add Passenger(weight=22, floorNumber=5)
+17.05.2021 20:34:36.033 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 46
+17.05.2021 20:34:39.040 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 6 floor
+17.05.2021 20:34:39.040 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 5 floor
+17.05.2021 20:34:39.930 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=UP)
+17.05.2021 20:34:39.930 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=8)], Down: []
+17.05.2021 20:34:39.945 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=11, floorNumber=6), Passenger(weight=49, floorNumber=9)], Down: [Passenger(weight=22, floorNumber=3), Passenger(weight=54, floorNumber=3)]
+17.05.2021 20:34:39.945 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=76, floorNumber=3), Passenger(weight=51, floorNumber=3)], Down: []
+17.05.2021 20:34:39.945 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=81, floorNumber=3), Passenger(weight=58, floorNumber=9)], Down: []
+17.05.2021 20:34:39.946 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=42, floorNumber=9), Passenger(weight=78, floorNumber=3), Passenger(weight=50, floorNumber=1), Passenger(weight=101, floorNumber=7)]
+17.05.2021 20:34:39.947 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=DOWN)
+17.05.2021 20:34:39.947 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=15, floorNumber=10)], Down: [Passenger(weight=99, floorNumber=5)]
+17.05.2021 20:34:39.947 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10), Passenger(weight=10, floorNumber=10)], Down: [Passenger(weight=85, floorNumber=8)]
+17.05.2021 20:34:39.963 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=9)], Down: [Passenger(weight=85, floorNumber=1), Passenger(weight=29, floorNumber=5), Passenger(weight=62, floorNumber=6)]
+17.05.2021 20:34:39.963 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=86, floorNumber=9), Passenger(weight=59, floorNumber=6), Passenger(weight=78, floorNumber=7)], Down: [Passenger(weight=90, floorNumber=2)]
+17.05.2021 20:34:39.965 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=10), Passenger(weight=92, floorNumber=10), Passenger(weight=37, floorNumber=10)], Down: [Passenger(weight=47, floorNumber=6)]
+17.05.2021 20:34:40.043 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 5,remove: [Passenger(weight=40, floorNumber=5)]
+17.05.2021 20:34:40.043 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=5, numberFloorFrom=6) = 1
+17.05.2021 20:34:40.043 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=5, direction=DOWN)
+17.05.2021 20:34:40.043 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 5, Add Passenger(weight=90, floorNumber=2)
+17.05.2021 20:34:40.043 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 168
+17.05.2021 20:34:40.059 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now on the 3 floor
+17.05.2021 20:34:40.059 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 3 floor
+17.05.2021 20:34:40.059 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 4 floor
+17.05.2021 20:34:40.059 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 4 floor
+17.05.2021 20:34:41.069 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=4, direction=UP)
+17.05.2021 20:34:41.069 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=11, floorNumber=6)
+17.05.2021 20:34:41.069 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 57
+17.05.2021 20:34:41.069 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=49, floorNumber=9)
+17.05.2021 20:34:41.069 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 221
+17.05.2021 20:34:44.089 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 5 floor
+17.05.2021 20:34:44.089 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 4 floor
+17.05.2021 20:34:44.089 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=4, direction=DOWN)
+17.05.2021 20:34:44.089 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=22, floorNumber=3)
+17.05.2021 20:34:44.089 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 190
+17.05.2021 20:34:44.089 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=54, floorNumber=3)
+17.05.2021 20:34:44.089 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 244
+17.05.2021 20:34:44.933 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=8), Passenger(weight=65, floorNumber=4)], Down: []
+17.05.2021 20:34:44.948 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=UP)
+17.05.2021 20:34:44.948 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=7)], Down: []
+17.05.2021 20:34:44.948 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=42, floorNumber=9), Passenger(weight=78, floorNumber=3), Passenger(weight=50, floorNumber=1), Passenger(weight=101, floorNumber=7), Passenger(weight=66, floorNumber=5)]
+17.05.2021 20:34:44.948 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=76, floorNumber=3), Passenger(weight=51, floorNumber=3), Passenger(weight=103, floorNumber=2)], Down: []
+17.05.2021 20:34:44.948 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10), Passenger(weight=10, floorNumber=10)], Down: [Passenger(weight=85, floorNumber=8), Passenger(weight=48, floorNumber=3)]
+17.05.2021 20:34:44.948 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=81, floorNumber=3), Passenger(weight=58, floorNumber=9), Passenger(weight=16, floorNumber=4)], Down: []
+17.05.2021 20:34:44.948 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=15, floorNumber=10), Passenger(weight=52, floorNumber=9)], Down: [Passenger(weight=99, floorNumber=5)]
+17.05.2021 20:34:44.980 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=DOWN)
+17.05.2021 20:34:44.980 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=10), Passenger(weight=92, floorNumber=10), Passenger(weight=37, floorNumber=10)], Down: [Passenger(weight=47, floorNumber=6), Passenger(weight=20, floorNumber=4)]
+17.05.2021 20:34:44.980 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=9), Passenger(weight=53, floorNumber=9)], Down: [Passenger(weight=85, floorNumber=1), Passenger(weight=29, floorNumber=5), Passenger(weight=62, floorNumber=6)]
+17.05.2021 20:34:44.981 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=86, floorNumber=9), Passenger(weight=59, floorNumber=6), Passenger(weight=78, floorNumber=7)], Down: [Passenger(weight=36, floorNumber=4)]
+17.05.2021 20:34:45.090 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now on the 4 floor
+17.05.2021 20:34:45.090 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 4 floor
+17.05.2021 20:34:45.090 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 5 floor
+17.05.2021 20:34:45.090 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 5 floor
+17.05.2021 20:34:45.093 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 4 floor
+17.05.2021 20:34:45.093 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 3 floor
+17.05.2021 20:34:46.105 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 5,remove: [Passenger(weight=24, floorNumber=5)]
+17.05.2021 20:34:46.105 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 5,remove: [Passenger(weight=24, floorNumber=5), Passenger(weight=22, floorNumber=5)]
+17.05.2021 20:34:46.105 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 3,remove: [Passenger(weight=78, floorNumber=3), Passenger(weight=22, floorNumber=3), Passenger(weight=54, floorNumber=3)]
+17.05.2021 20:34:46.106 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=3, numberFloorFrom=6) = 1
+17.05.2021 20:34:46.106 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=5, numberFloorFrom=2) = 1
+17.05.2021 20:34:46.106 [Elevator #3] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=5, numberFloorFrom=2) = 1
+17.05.2021 20:34:46.107 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=3, numberFloorFrom=4) = 2
+17.05.2021 20:34:46.107 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=5, direction=UP)
+17.05.2021 20:34:46.107 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=5, numberFloorFrom=3) = 1
+17.05.2021 20:34:46.107 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 5, Add Passenger(weight=86, floorNumber=9)
+17.05.2021 20:34:46.107 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 5, Add Passenger(weight=59, floorNumber=6)
+17.05.2021 20:34:46.107 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 283
+17.05.2021 20:34:46.107 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 70
+17.05.2021 20:34:46.107 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 5, Add Passenger(weight=78, floorNumber=7)
+17.05.2021 20:34:46.107 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 361
+17.05.2021 20:34:49.946 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=8), Passenger(weight=65, floorNumber=4), Passenger(weight=48, floorNumber=6)], Down: []
+17.05.2021 20:34:49.962 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=42, floorNumber=9), Passenger(weight=78, floorNumber=3), Passenger(weight=50, floorNumber=1), Passenger(weight=101, floorNumber=7), Passenger(weight=66, floorNumber=5), Passenger(weight=85, floorNumber=4)]
+17.05.2021 20:34:49.962 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=76, floorNumber=3), Passenger(weight=51, floorNumber=3), Passenger(weight=103, floorNumber=2), Passenger(weight=52, floorNumber=6)], Down: []
+17.05.2021 20:34:49.963 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=10), Passenger(weight=10, floorNumber=10)], Down: [Passenger(weight=85, floorNumber=8), Passenger(weight=48, floorNumber=3), Passenger(weight=43, floorNumber=6)]
+17.05.2021 20:34:49.966 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=15, floorNumber=10), Passenger(weight=52, floorNumber=9)], Down: [Passenger(weight=99, floorNumber=5), Passenger(weight=48, floorNumber=3)]
+17.05.2021 20:34:49.966 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=81, floorNumber=3), Passenger(weight=58, floorNumber=9), Passenger(weight=16, floorNumber=4), Passenger(weight=58, floorNumber=4)], Down: []
+17.05.2021 20:34:49.967 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=7), Passenger(weight=102, floorNumber=5)], Down: []
+17.05.2021 20:34:49.992 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=UP)
+17.05.2021 20:34:49.992 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=56, floorNumber=7)], Down: [Passenger(weight=36, floorNumber=4)]
+17.05.2021 20:34:49.992 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=9), Passenger(weight=53, floorNumber=9)], Down: [Passenger(weight=85, floorNumber=1), Passenger(weight=29, floorNumber=5), Passenger(weight=62, floorNumber=6), Passenger(weight=88, floorNumber=3)]
+17.05.2021 20:34:49.993 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=10), Passenger(weight=92, floorNumber=10), Passenger(weight=37, floorNumber=10)], Down: [Passenger(weight=47, floorNumber=6), Passenger(weight=20, floorNumber=4), Passenger(weight=93, floorNumber=6)]
+17.05.2021 20:34:50.147 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now in the 3 floor
+17.05.2021 20:34:50.147 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now on the 5 floor
+17.05.2021 20:34:50.147 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 5 floor
+17.05.2021 20:34:50.147 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 6 floor
+17.05.2021 20:34:50.147 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 6 floor
+17.05.2021 20:34:50.147 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 2 floor
+17.05.2021 20:34:51.156 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 6,remove: [Passenger(weight=11, floorNumber=6), Passenger(weight=59, floorNumber=6)]
+17.05.2021 20:34:51.156 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 2,remove: [Passenger(weight=90, floorNumber=2)]
+17.05.2021 20:34:51.157 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 6,remove: [Passenger(weight=54, floorNumber=6)]
+17.05.2021 20:34:51.158 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=2, numberFloorFrom=5) = 1
+17.05.2021 20:34:51.158 [Elevator #3] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=6, numberFloorFrom=3) = 1
+17.05.2021 20:34:51.158 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=6, numberFloorFrom=5) = 1
+17.05.2021 20:34:51.159 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=6, direction=UP)
+17.05.2021 20:34:51.160 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=6, numberFloorFrom=4) = 1
+17.05.2021 20:34:51.160 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 6, Add Passenger(weight=15, floorNumber=10)
+17.05.2021 20:34:51.161 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 322
+17.05.2021 20:34:51.161 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 6, Add Passenger(weight=52, floorNumber=9)
+17.05.2021 20:34:51.161 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 52
+17.05.2021 21:47:39.236 [main] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=2, numberFloorFrom=1) = 1
+17.05.2021 22:16:21.303 [main] [INFO ]  by.kuzmich.models.Building - The building begins to be created
+17.05.2021 22:16:21.487 [main] [INFO ]  by.kuzmich.models.Building - The building was created
+17.05.2021 22:16:21.503 [main] [INFO ]  by.kuzmich.models.Building - The building begins to be created
+17.05.2021 22:16:21.503 [main] [INFO ]  by.kuzmich.models.Building - The building was created
+17.05.2021 22:16:21.519 [main] [INFO ]  by.kuzmich.models.Building - The building begins to be created
+17.05.2021 22:16:21.519 [main] [INFO ]  by.kuzmich.models.Building - The building was created
+18.05.2021 00:09:35.797 [main] [INFO ]  by.kuzmich.models.Elevator - Floor: 1, Add Passenger(weight=47, floorNumber=5)
+18.05.2021 00:09:35.813 [main] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 47
+18.05.2021 00:09:35.828 [main] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=1, direction=UP)
+18.05.2021 00:09:35.844 [main] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=1, direction=UP)
+18.05.2021 00:10:15.103 [main] [INFO ]  by.kuzmich.models.Building - The building begins to be created
+18.05.2021 00:10:15.277 [main] [INFO ]  by.kuzmich.models.Building - The building was created
+18.05.2021 00:10:15.287 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: []
+18.05.2021 00:10:15.291 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=2, direction=UP)
+18.05.2021 00:10:15.290 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=UP)
+18.05.2021 00:10:15.299 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=UP)
+18.05.2021 00:10:15.300 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=5, direction=UP)
+18.05.2021 00:10:15.303 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=UP)
+18.05.2021 00:10:15.313 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=49, floorNumber=10)], Down: []
+18.05.2021 00:10:15.300 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=9)], Down: []
+18.05.2021 00:10:15.297 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=22, floorNumber=4)], Down: []
+18.05.2021 00:10:15.316 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=UP)
+18.05.2021 00:10:15.316 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=3, direction=UP)
+18.05.2021 00:10:15.317 [Elevator #4] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=4, direction=UP)
+18.05.2021 00:10:15.317 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=40, floorNumber=8)], Down: []
+18.05.2021 00:10:15.317 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=DOWN)
+18.05.2021 00:10:15.318 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=43, floorNumber=4)]
+18.05.2021 00:10:15.318 [Floor #7] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=UP)
+18.05.2021 00:10:15.318 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=72, floorNumber=9)], Down: []
+18.05.2021 00:10:15.319 [Floor #8] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=8, direction=DOWN)
+18.05.2021 00:10:15.319 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=77, floorNumber=7)]
+18.05.2021 00:10:15.321 [Floor #9] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=9, direction=DOWN)
+18.05.2021 00:10:15.322 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=57, floorNumber=6)]
+18.05.2021 00:10:15.322 [Floor #10] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=10, direction=DOWN)
+18.05.2021 00:10:15.322 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=24, floorNumber=4)]
+18.05.2021 00:10:16.306 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now on the 1 floor
+18.05.2021 00:10:16.306 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 2 floor
+18.05.2021 00:10:16.321 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now on the 1 floor
+18.05.2021 00:10:16.321 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now on the 1 floor
+18.05.2021 00:10:16.322 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 2 floor
+18.05.2021 00:10:16.322 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 2 floor
+18.05.2021 00:10:16.322 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 1 floor
+18.05.2021 00:10:16.322 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 2 floor
+18.05.2021 00:10:17.318 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 2, Add Passenger(weight=22, floorNumber=4)
+18.05.2021 00:10:17.318 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 22
+18.05.2021 00:10:17.333 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=6, direction=DOWN)
+18.05.2021 00:10:17.333 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 2 floor
+18.05.2021 00:10:20.295 [Floor #1] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=1, direction=UP)
+18.05.2021 00:10:20.296 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=7)], Down: []
+18.05.2021 00:10:20.326 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=24, floorNumber=4), Passenger(weight=45, floorNumber=4)]
+18.05.2021 00:10:20.326 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=57, floorNumber=6), Passenger(weight=90, floorNumber=2)]
+18.05.2021 00:10:20.326 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=77, floorNumber=7), Passenger(weight=36, floorNumber=2)]
+18.05.2021 00:10:20.327 [Floor #7] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=DOWN)
+18.05.2021 00:10:20.328 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=UP)
+18.05.2021 00:10:20.328 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=72, floorNumber=9)], Down: [Passenger(weight=50, floorNumber=4)]
+18.05.2021 00:10:20.329 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=58, floorNumber=10)], Down: [Passenger(weight=43, floorNumber=4)]
+18.05.2021 00:10:20.329 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=UP)
+18.05.2021 00:10:20.330 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=40, floorNumber=8), Passenger(weight=108, floorNumber=9)], Down: []
+18.05.2021 00:10:20.330 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=UP)
+18.05.2021 00:10:20.331 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=20, floorNumber=5)], Down: []
+18.05.2021 00:10:20.331 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=DOWN)
+18.05.2021 00:10:20.331 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=9)], Down: [Passenger(weight=51, floorNumber=1)]
+18.05.2021 00:10:20.332 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=UP)
+18.05.2021 00:10:20.332 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=49, floorNumber=10), Passenger(weight=28, floorNumber=6)], Down: []
+18.05.2021 00:10:21.340 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now on the 2 floor
+18.05.2021 00:10:21.340 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to 6 floor
+18.05.2021 00:10:21.341 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 3 floor
+18.05.2021 00:10:21.342 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 6, Add Passenger(weight=43, floorNumber=4)
+18.05.2021 00:10:21.342 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 43
+18.05.2021 00:10:21.354 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now on the 2 floor
+18.05.2021 00:10:21.354 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now on the 2 floor
+18.05.2021 00:10:21.354 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 3 floor
+18.05.2021 00:10:21.354 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 3 floor
+18.05.2021 00:10:22.354 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=3, direction=UP)
+18.05.2021 00:10:22.354 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 3, Add Passenger(weight=49, floorNumber=10)
+18.05.2021 00:10:22.354 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 71
+18.05.2021 00:10:22.354 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 3, Add Passenger(weight=28, floorNumber=6)
+18.05.2021 00:10:22.354 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 99
+18.05.2021 00:10:22.370 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=7, direction=UP)
+18.05.2021 00:10:25.305 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=7), Passenger(weight=38, floorNumber=3)], Down: []
+18.05.2021 00:10:25.337 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=58, floorNumber=10)], Down: []
+18.05.2021 00:10:25.337 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=UP)
+18.05.2021 00:10:25.337 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=63, floorNumber=9)], Down: []
+18.05.2021 00:10:25.337 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=9)], Down: [Passenger(weight=51, floorNumber=1), Passenger(weight=30, floorNumber=1)]
+18.05.2021 00:10:25.337 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=DOWN)
+18.05.2021 00:10:25.337 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=40, floorNumber=8), Passenger(weight=108, floorNumber=9)], Down: [Passenger(weight=32, floorNumber=2)]
+18.05.2021 00:10:25.337 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=DOWN)
+18.05.2021 00:10:25.337 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=20, floorNumber=5)], Down: [Passenger(weight=14, floorNumber=1)]
+18.05.2021 00:10:25.337 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=24, floorNumber=4), Passenger(weight=45, floorNumber=4), Passenger(weight=69, floorNumber=5)]
+18.05.2021 00:10:25.337 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=72, floorNumber=9)], Down: [Passenger(weight=50, floorNumber=4), Passenger(weight=72, floorNumber=6)]
+18.05.2021 00:10:25.337 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=57, floorNumber=6), Passenger(weight=90, floorNumber=2), Passenger(weight=107, floorNumber=8)]
+18.05.2021 00:10:25.337 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=77, floorNumber=7), Passenger(weight=36, floorNumber=2), Passenger(weight=103, floorNumber=6)]
+18.05.2021 00:10:25.368 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now in the 6 floor
+18.05.2021 00:10:25.368 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 5 floor
+18.05.2021 00:10:25.368 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=5, direction=DOWN)
+18.05.2021 00:10:25.368 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 5, Add Passenger(weight=51, floorNumber=1)
+18.05.2021 00:10:25.368 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 94
+18.05.2021 00:10:25.368 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 5, Add Passenger(weight=30, floorNumber=1)
+18.05.2021 00:10:25.368 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 124
+18.05.2021 00:10:26.371 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now on the 3 floor
+18.05.2021 00:10:26.371 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 4 floor
+18.05.2021 00:10:26.372 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now in the 5 floor
+18.05.2021 00:10:26.372 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 4 floor
+18.05.2021 00:10:26.388 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now on the 3 floor
+18.05.2021 00:10:26.388 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now on the 3 floor
+18.05.2021 00:10:26.389 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 4 floor
+18.05.2021 00:10:26.389 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 4 floor
+18.05.2021 00:10:27.377 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 4,remove: [Passenger(weight=22, floorNumber=4)]
+18.05.2021 00:10:27.377 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 4,remove: [Passenger(weight=43, floorNumber=4)]
+18.05.2021 00:10:27.378 [Elevator #2] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=4, numberFloorFrom=2) = 1
+18.05.2021 00:10:27.378 [Elevator #1] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=4, numberFloorFrom=6) = 1
+18.05.2021 00:10:27.378 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=4, direction=DOWN)
+18.05.2021 00:10:27.378 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=4, direction=UP)
+18.05.2021 00:10:27.378 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=32, floorNumber=2)
+18.05.2021 00:10:27.378 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 113
+18.05.2021 00:10:27.378 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=40, floorNumber=8)
+18.05.2021 00:10:27.378 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 117
+18.05.2021 00:10:27.378 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=108, floorNumber=9)
+18.05.2021 00:10:27.378 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 225
+18.05.2021 00:10:27.394 [Elevator #4] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=8, direction=DOWN)
+18.05.2021 00:10:27.394 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now on the 4 floor
+18.05.2021 00:10:30.315 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=7), Passenger(weight=38, floorNumber=3), Passenger(weight=106, floorNumber=3)], Down: []
+18.05.2021 00:10:30.346 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=63, floorNumber=9)], Down: []
+18.05.2021 00:10:30.346 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=DOWN)
+18.05.2021 00:10:30.347 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=UP)
+18.05.2021 00:10:30.347 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=58, floorNumber=10)], Down: [Passenger(weight=74, floorNumber=1)]
+18.05.2021 00:10:30.347 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=73, floorNumber=9), Passenger(weight=71, floorNumber=7)], Down: []
+18.05.2021 00:10:30.347 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=UP)
+18.05.2021 00:10:30.347 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=54, floorNumber=9)], Down: []
+18.05.2021 00:10:30.347 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=20, floorNumber=5), Passenger(weight=49, floorNumber=3)], Down: [Passenger(weight=14, floorNumber=1)]
+18.05.2021 00:10:30.347 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=72, floorNumber=9)], Down: [Passenger(weight=50, floorNumber=4), Passenger(weight=72, floorNumber=6), Passenger(weight=80, floorNumber=2)]
+18.05.2021 00:10:30.347 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=24, floorNumber=4), Passenger(weight=45, floorNumber=4), Passenger(weight=69, floorNumber=5), Passenger(weight=44, floorNumber=6)]
+18.05.2021 00:10:30.347 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=57, floorNumber=6), Passenger(weight=90, floorNumber=2), Passenger(weight=107, floorNumber=8), Passenger(weight=97, floorNumber=5)]
+18.05.2021 00:10:30.347 [Floor #8] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=8, direction=DOWN)
+18.05.2021 00:10:30.347 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=77, floorNumber=7), Passenger(weight=36, floorNumber=2), Passenger(weight=103, floorNumber=6), Passenger(weight=92, floorNumber=5)]
+18.05.2021 00:10:35.266 [main] [INFO ]  by.kuzmich.models.Building - The building begins to be created
+18.05.2021 00:10:35.391 [main] [INFO ]  by.kuzmich.models.Building - The building was created
+18.05.2021 00:10:35.409 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: []
+18.05.2021 00:10:35.409 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=UP)
+18.05.2021 00:10:35.409 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=12, floorNumber=6)], Down: []
+18.05.2021 00:10:35.425 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=UP)
+18.05.2021 00:10:35.425 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=69, floorNumber=10)], Down: []
+18.05.2021 00:10:35.425 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=UP)
+18.05.2021 00:10:35.425 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=98, floorNumber=8)], Down: []
+18.05.2021 00:10:35.425 [Floor #1] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=1, direction=UP)
+18.05.2021 00:10:35.425 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=97, floorNumber=8)], Down: []
+18.05.2021 00:10:35.425 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=DOWN)
+18.05.2021 00:10:35.425 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=78, floorNumber=5)]
+18.05.2021 00:10:35.425 [Floor #7] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=DOWN)
+18.05.2021 00:10:35.425 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=24, floorNumber=1)]
+18.05.2021 00:10:35.425 [Floor #8] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=8, direction=DOWN)
+18.05.2021 00:10:35.425 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=45, floorNumber=6)]
+18.05.2021 00:10:35.425 [Floor #9] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=9, direction=UP)
+18.05.2021 00:10:35.425 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=106, floorNumber=10)], Down: []
+18.05.2021 00:10:35.425 [Floor #10] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=10, direction=DOWN)
+18.05.2021 00:10:35.425 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=73, floorNumber=9)]
+18.05.2021 00:10:35.425 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=1, direction=UP)
+18.05.2021 00:10:36.457 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 1, Add Passenger(weight=97, floorNumber=8)
+18.05.2021 00:10:36.458 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 97
+18.05.2021 00:10:40.419 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=UP)
+18.05.2021 00:10:40.420 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=47, floorNumber=6)], Down: []
+18.05.2021 00:10:40.424 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=12, floorNumber=6), Passenger(weight=99, floorNumber=9)], Down: []
+18.05.2021 00:10:40.440 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=UP)
+18.05.2021 00:10:40.440 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=98, floorNumber=8), Passenger(weight=87, floorNumber=5)], Down: []
+18.05.2021 00:10:40.442 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=22, floorNumber=10)], Down: [Passenger(weight=78, floorNumber=5)]
+18.05.2021 00:10:40.442 [Floor #1] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=1, direction=UP)
+18.05.2021 00:10:40.442 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=50, floorNumber=7)], Down: []
+18.05.2021 00:10:40.442 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=DOWN)
+18.05.2021 00:10:40.442 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=69, floorNumber=10)], Down: [Passenger(weight=50, floorNumber=3)]
+18.05.2021 00:10:40.442 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=106, floorNumber=10), Passenger(weight=59, floorNumber=10)], Down: []
+18.05.2021 00:10:40.442 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=24, floorNumber=1), Passenger(weight=75, floorNumber=4)]
+18.05.2021 00:10:40.442 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=73, floorNumber=9), Passenger(weight=60, floorNumber=1)]
+18.05.2021 00:10:40.442 [Floor #8] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=8, direction=UP)
+18.05.2021 00:10:40.442 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=90, floorNumber=10)], Down: [Passenger(weight=45, floorNumber=6)]
+18.05.2021 00:10:40.489 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 1 floor
+18.05.2021 00:10:40.489 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 2 floor
+18.05.2021 00:10:41.499 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=2, direction=UP)
+18.05.2021 00:10:41.499 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 2, Add Passenger(weight=12, floorNumber=6)
+18.05.2021 00:10:41.499 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 109
+18.05.2021 00:10:41.499 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 2, Add Passenger(weight=99, floorNumber=9)
+18.05.2021 00:10:41.499 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 208
+18.05.2021 00:10:45.433 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=UP)
+18.05.2021 00:10:45.433 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=47, floorNumber=6), Passenger(weight=74, floorNumber=6)], Down: []
+18.05.2021 00:10:45.434 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=109, floorNumber=5)], Down: []
+18.05.2021 00:10:45.450 [Floor #9] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=9, direction=DOWN)
+18.05.2021 00:10:45.450 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=98, floorNumber=8), Passenger(weight=87, floorNumber=5)], Down: []
+18.05.2021 00:10:45.451 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=90, floorNumber=10), Passenger(weight=30, floorNumber=10)], Down: [Passenger(weight=45, floorNumber=6)]
+18.05.2021 00:10:45.451 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=24, floorNumber=1), Passenger(weight=75, floorNumber=4), Passenger(weight=85, floorNumber=1)]
+18.05.2021 00:10:45.451 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=69, floorNumber=10), Passenger(weight=64, floorNumber=10)], Down: [Passenger(weight=50, floorNumber=3)]
+18.05.2021 00:10:45.451 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=50, floorNumber=7), Passenger(weight=12, floorNumber=5)], Down: []
+18.05.2021 00:10:45.451 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=73, floorNumber=9), Passenger(weight=60, floorNumber=1), Passenger(weight=107, floorNumber=6)]
+18.05.2021 00:10:45.451 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=22, floorNumber=10), Passenger(weight=10, floorNumber=7)], Down: [Passenger(weight=78, floorNumber=5)]
+18.05.2021 00:10:45.451 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=106, floorNumber=10), Passenger(weight=59, floorNumber=10)], Down: [Passenger(weight=46, floorNumber=7)]
+18.05.2021 00:10:45.530 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 2 floor
+18.05.2021 00:10:45.530 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 3 floor
+18.05.2021 00:10:46.539 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=3, direction=UP)
+18.05.2021 00:10:46.539 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 3, Add Passenger(weight=98, floorNumber=8)
+18.05.2021 00:10:46.539 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 306
+18.05.2021 00:10:46.539 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Floor: 3, Add Passenger(weight=87, floorNumber=5)
+18.05.2021 00:10:46.539 [Elevator #1] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 393
+18.05.2021 00:10:51.947 [main] [INFO ]  by.kuzmich.models.Building - The building begins to be created
+18.05.2021 00:10:52.118 [main] [INFO ]  by.kuzmich.models.Building - The building was created
+18.05.2021 00:10:52.139 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: []
+18.05.2021 00:10:52.140 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=UP)
+18.05.2021 00:10:52.140 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=UP)
+18.05.2021 00:10:52.140 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=7)], Down: []
+18.05.2021 00:10:52.140 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=66, floorNumber=6)], Down: []
+18.05.2021 00:10:52.140 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=DOWN)
+18.05.2021 00:10:52.156 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: []
+18.05.2021 00:10:52.157 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=DOWN)
+18.05.2021 00:10:52.156 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=50, floorNumber=1)]
+18.05.2021 00:10:52.158 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=35, floorNumber=3)]
+18.05.2021 00:10:52.159 [Floor #7] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=UP)
+18.05.2021 00:10:52.159 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=105, floorNumber=9)], Down: []
+18.05.2021 00:10:52.159 [Floor #8] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=8, direction=DOWN)
+18.05.2021 00:10:52.159 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=88, floorNumber=4)]
+18.05.2021 00:10:52.159 [Floor #9] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=9, direction=DOWN)
+18.05.2021 00:10:52.159 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=30, floorNumber=8)]
+18.05.2021 00:10:52.159 [Floor #10] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=10, direction=DOWN)
+18.05.2021 00:10:52.159 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=102, floorNumber=1)]
+18.05.2021 00:10:52.159 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=3, direction=UP)
+18.05.2021 00:10:52.159 [Elevator #2] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=2, direction=UP)
+18.05.2021 00:10:52.174 [Elevator #4] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=6, direction=DOWN)
+18.05.2021 00:10:52.174 [Elevator #3] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=4, direction=DOWN)
+18.05.2021 00:10:52.174 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now on the 1 floor
+18.05.2021 00:10:52.174 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now on the 1 floor
+18.05.2021 00:10:53.188 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 1 floor
+18.05.2021 00:10:53.188 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now on the 1 floor
+18.05.2021 00:10:53.188 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 2 floor
+18.05.2021 00:10:53.188 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 2 floor
+18.05.2021 00:10:54.194 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 2, Add Passenger(weight=66, floorNumber=6)
+18.05.2021 00:10:54.194 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 66
+18.05.2021 00:10:55.187 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to 4 floor
+18.05.2021 00:10:55.188 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=50, floorNumber=1)
+18.05.2021 00:10:55.189 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 50
+18.05.2021 00:10:56.194 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now in the 4 floor
+18.05.2021 00:10:56.195 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 3 floor
+18.05.2021 00:10:57.155 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: []
+18.05.2021 00:10:57.155 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=7)], Down: []
+18.05.2021 00:10:57.156 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: []
+18.05.2021 00:10:57.171 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=35, floorNumber=3)]
+18.05.2021 00:10:57.171 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=UP)
+18.05.2021 00:10:57.172 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=105, floorNumber=6)], Down: []
+18.05.2021 00:10:57.172 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=30, floorNumber=8), Passenger(weight=83, floorNumber=4)]
+18.05.2021 00:10:57.172 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=102, floorNumber=1), Passenger(weight=98, floorNumber=9)]
+18.05.2021 00:10:57.173 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=88, floorNumber=4), Passenger(weight=67, floorNumber=2)]
+18.05.2021 00:10:57.173 [Floor #7] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=DOWN)
+18.05.2021 00:10:57.173 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=105, floorNumber=9)], Down: [Passenger(weight=70, floorNumber=5)]
+18.05.2021 00:10:57.173 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=DOWN)
+18.05.2021 00:10:57.173 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=87, floorNumber=2)]
+18.05.2021 00:10:57.189 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to 6 floor
+18.05.2021 00:10:57.189 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Floor: 6, Add Passenger(weight=35, floorNumber=3)
+18.05.2021 00:10:57.189 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 35
+18.05.2021 00:10:57.204 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now in the 3 floor
+18.05.2021 00:10:57.204 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 2 floor
+18.05.2021 00:10:58.204 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 6 floor
+18.05.2021 00:10:58.205 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 5 floor
+18.05.2021 00:10:58.219 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 2 floor
+18.05.2021 00:10:58.219 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 now in the 2 floor
+18.05.2021 00:10:58.219 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now on the 2 floor
+18.05.2021 00:10:58.219 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 3 floor
+18.05.2021 00:10:58.219 [Elevator #3] [INFO ]  by.kuzmich.service.FloorService - Elevator #3 moved to the 1 floor
+18.05.2021 00:10:58.219 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 3 floor
+18.05.2021 00:10:59.218 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 5 floor
+18.05.2021 00:10:59.219 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 4 floor
+18.05.2021 00:10:59.220 [Elevator #4] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=4, direction=DOWN)
+18.05.2021 00:10:59.221 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=87, floorNumber=2)
+18.05.2021 00:10:59.221 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 122
+18.05.2021 00:10:59.234 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Take call: Call(number=7, direction=UP)
+18.05.2021 00:10:59.234 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 3, Add Passenger(weight=14, floorNumber=7)
+18.05.2021 00:10:59.235 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 80
+18.05.2021 00:10:59.242 [Elevator #3] [INFO ]  by.kuzmich.models.Elevator - Floor: 1,remove: [Passenger(weight=50, floorNumber=1)]
+18.05.2021 00:10:59.253 [Elevator #3] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=1, numberFloorFrom=4) = 1
+18.05.2021 00:11:00.224 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 4 floor
+18.05.2021 00:11:00.224 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 3 floor
+18.05.2021 00:11:01.227 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Floor: 3,remove: [Passenger(weight=35, floorNumber=3)]
+18.05.2021 00:11:01.227 [Elevator #4] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=3, numberFloorFrom=6) = 1
+18.05.2021 00:11:02.164 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=DOWN)
+18.05.2021 00:11:02.164 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=18, floorNumber=1)]
+18.05.2021 00:11:02.164 [Floor #3] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=3, direction=UP)
+18.05.2021 00:11:02.164 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=80, floorNumber=7)], Down: []
+18.05.2021 00:11:02.164 [Floor #1] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=1, direction=UP)
+18.05.2021 00:11:02.164 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=55, floorNumber=3)], Down: []
+18.05.2021 00:11:02.180 [Floor #5] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=5, direction=DOWN)
+18.05.2021 00:11:02.180 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=88, floorNumber=4), Passenger(weight=67, floorNumber=2), Passenger(weight=79, floorNumber=3)]
+18.05.2021 00:11:02.180 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=102, floorNumber=1), Passenger(weight=98, floorNumber=9), Passenger(weight=108, floorNumber=4)]
+18.05.2021 00:11:02.180 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=30, floorNumber=8), Passenger(weight=83, floorNumber=4), Passenger(weight=53, floorNumber=3)]
+18.05.2021 00:11:02.180 [Floor #7] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=7, direction=UP)
+18.05.2021 00:11:02.180 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=105, floorNumber=6)], Down: [Passenger(weight=19, floorNumber=3)]
+18.05.2021 00:11:02.180 [Floor #4] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=4, direction=UP)
+18.05.2021 00:11:02.180 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=105, floorNumber=9), Passenger(weight=20, floorNumber=9)], Down: [Passenger(weight=70, floorNumber=5)]
+18.05.2021 00:11:02.180 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=14, floorNumber=5)], Down: []
+18.05.2021 00:11:02.180 [Floor #6] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=6, direction=DOWN)
+18.05.2021 00:11:02.180 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=22, floorNumber=1)]
+18.05.2021 00:11:03.273 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 3 floor
+18.05.2021 00:11:03.273 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now on the 3 floor
+18.05.2021 00:11:03.274 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 4 floor
+18.05.2021 00:11:03.274 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 4 floor
+18.05.2021 00:11:04.290 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Floor: 4, Add Passenger(weight=14, floorNumber=5)
+18.05.2021 00:11:04.290 [Elevator #1] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=4, direction=UP)
+18.05.2021 00:11:04.291 [Elevator #2] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 94
+18.05.2021 00:11:05.251 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 now in the 3 floor
+18.05.2021 00:11:05.251 [Elevator #4] [INFO ]  by.kuzmich.service.FloorService - Elevator #4 moved to the 2 floor
+18.05.2021 00:11:06.260 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Floor: 2,remove: [Passenger(weight=87, floorNumber=2)]
+18.05.2021 00:11:06.260 [Elevator #4] [INFO ]  by.kuzmich.statistics.Statistics - Statistics: StatisticsService(numberFloorTo=2, numberFloorFrom=4) = 1
+18.05.2021 00:11:06.260 [Elevator #4] [INFO ]  by.kuzmich.service.CallService - Delete call: Call(number=2, direction=DOWN)
+18.05.2021 00:11:06.260 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Floor: 2, Add Passenger(weight=18, floorNumber=1)
+18.05.2021 00:11:06.260 [Elevator #4] [INFO ]  by.kuzmich.models.Elevator - Load elevator = 18
+18.05.2021 00:11:07.177 [Floor #2] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=2, direction=UP)
+18.05.2021 00:11:07.177 [Floor #2] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=106, floorNumber=6)], Down: []
+18.05.2021 00:11:07.177 [Floor #1] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=55, floorNumber=3), Passenger(weight=101, floorNumber=10)], Down: []
+18.05.2021 00:11:07.177 [Floor #3] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=80, floorNumber=7), Passenger(weight=47, floorNumber=5)], Down: []
+18.05.2021 00:11:07.193 [Floor #8] [INFO ]  by.kuzmich.service.CallService - Add call: Call(number=8, direction=UP)
+18.05.2021 00:11:07.193 [Floor #10] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=102, floorNumber=1), Passenger(weight=98, floorNumber=9), Passenger(weight=108, floorNumber=4), Passenger(weight=75, floorNumber=2)]
+18.05.2021 00:11:07.194 [Floor #4] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: []
+18.05.2021 00:11:07.194 [Floor #9] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=30, floorNumber=8), Passenger(weight=83, floorNumber=4), Passenger(weight=53, floorNumber=3), Passenger(weight=65, floorNumber=5)]
+18.05.2021 00:11:07.194 [Floor #6] [INFO ]  by.kuzmich.models.Floor - Up: [], Down: [Passenger(weight=22, floorNumber=1)]
+18.05.2021 00:11:07.194 [Floor #5] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=105, floorNumber=6), Passenger(weight=40, floorNumber=7)], Down: [Passenger(weight=19, floorNumber=3)]
+18.05.2021 00:11:07.196 [Floor #8] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=45, floorNumber=10)], Down: [Passenger(weight=88, floorNumber=4), Passenger(weight=67, floorNumber=2), Passenger(weight=79, floorNumber=3)]
+18.05.2021 00:11:07.196 [Floor #7] [INFO ]  by.kuzmich.models.Floor - Up: [Passenger(weight=105, floorNumber=9), Passenger(weight=20, floorNumber=9)], Down: [Passenger(weight=70, floorNumber=5), Passenger(weight=105, floorNumber=2)]
+18.05.2021 00:11:08.318 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 now on the 4 floor
+18.05.2021 00:11:08.318 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 now on the 4 floor
+18.05.2021 00:11:08.318 [Elevator #1] [INFO ]  by.kuzmich.service.FloorService - Elevator #1 moved to the 5 floor
+18.05.2021 00:11:08.318 [Elevator #2] [INFO ]  by.kuzmich.service.FloorService - Elevator #2 moved to the 5 floor
