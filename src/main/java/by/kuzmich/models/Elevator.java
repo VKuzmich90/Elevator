@@ -32,7 +32,7 @@ public class Elevator extends Thread{
     private final List<Passenger> passengers = new ArrayList<>();
     @Getter
     private boolean isDoorOpened;
-    @Getter
+
     private boolean stop;
 
     private FloorService floorService;
@@ -61,8 +61,8 @@ public class Elevator extends Thread{
         while (!isStop()) {
             Call call = getNextCall();
             this.direction = call.getDirection();
-            int minFloor = 0;
-            int maxFloor = 1000;
+            int minFloor = 1000;
+            int maxFloor = 0;
 
             floor = floorService.moveToNeededFloor(floor.getFloorNumber(), call.getNumber(), direction);
 
@@ -134,6 +134,10 @@ public class Elevator extends Thread{
         checkNotNull(floor, "Floor is null!");
 
         this.floor = floor;
+    }
+
+    public boolean isStop() {
+        return stop;
     }
 
     public void stopTheThread(){
