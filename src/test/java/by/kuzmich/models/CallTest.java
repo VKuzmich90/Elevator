@@ -19,17 +19,13 @@ class CallTest {
 
     @Test
     void invalidDirection() {
-        assertThrows(NullPointerException.class, () -> {
-            Call.of(5, null);
-        });
+        assertThrows(NullPointerException.class, () -> Call.of(5, null));
 
     }
 
     @Test
     void invalidFloorNumber() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            Call.of(0, DirectionType.UP);
-        });
+        assertThrows(IllegalArgumentException.class, () -> Call.of(0, DirectionType.UP));
     }
 
 }

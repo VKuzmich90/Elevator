@@ -108,7 +108,7 @@ public class Floor extends Thread {
                 callService.addCall(floorNumber, DirectionType.UP);
             }
             log.info("Up: {}, Down: {}", queueUp, queueDown);
-            TimeUnit.SECONDS.sleep(15);
+            TimeUnit.SECONDS.sleep(5);
         }
     }
 
@@ -134,19 +134,19 @@ public class Floor extends Thread {
         stopped = true;
     }
 
-    public void offClickedDown() {
+    public void offPressedDown() {
         isPressedDown = false;
     }
 
-    public void onClickedDown() {
+    public void onPressedDown() {
         isPressedDown = true;
     }
 
-    public void offClickedUp() {
+    public void offPressedUp() {
         isPressedUp = false;
     }
 
-    public void onClickedUp() {
+    public void onPressedUp() {
         isPressedUp = true;
     }
 

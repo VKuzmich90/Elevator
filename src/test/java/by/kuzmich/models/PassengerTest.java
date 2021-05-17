@@ -19,16 +19,12 @@ class PassengerTest {
 
     @Test
     void invalidWeight() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            Passenger.of(0, 3);
-        });
+        assertThrows(IllegalArgumentException.class, () -> Passenger.of(0, 3));
     }
 
     @Test
     void invalidFloorNumber() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            Passenger.of(50, 0);
-        });
+        assertThrows(IllegalArgumentException.class, () -> Passenger.of(50, 0));
     }
 
 

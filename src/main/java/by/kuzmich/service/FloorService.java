@@ -36,7 +36,7 @@ public class FloorService {
     public Floor getFloor(int numberFloor) {
         checkArgument(numberFloor > 0, "Number floor must be positive!");
 
-        return floorList.get(numberFloor);
+        return floorList.get(numberFloor - 1);
     }
 
     public Floor nextFloor(Floor floor, DirectionType direction) {
@@ -72,7 +72,7 @@ public class FloorService {
 
             log.info("{} now on the {} floor", Thread.currentThread().getName(), currentFloor);
 
-            TimeUnit.SECONDS.sleep(Math.abs(currentFloor - neededFloor) * Elevator.LIFT_SPEED);
+            TimeUnit.SECONDS.sleep(Math.abs(currentFloor - neededFloor) * Elevator.ELEVATOR_SPEED);
 
             log.info("{} moved to {} floor", Thread.currentThread().getName(), neededFloor);
 

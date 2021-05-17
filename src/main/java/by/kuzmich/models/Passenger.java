@@ -15,16 +15,14 @@ import static com.google.common.base.Preconditions.checkArgument;
 @EqualsAndHashCode
 public class Passenger {
 
-    public static final int MAX_WEIGHT = 120;
+    public static final int MAX_WEIGHT = 130;
 
-    private final UUID id;
     private final int weight;
     private final int floorNumber;
 
     private Passenger(int weight, int floorNumber) {
         log.debug("The passenger begins to be created");
 
-        this.id = UUID.randomUUID();
         this.weight = weight;
         this.floorNumber = floorNumber;
 

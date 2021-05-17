@@ -21,9 +21,7 @@ class CallServiceTest {
 
     @Test
     void invalid() {
-        assertThrows(NullPointerException.class, () -> {
-            CallService.of(null);
-        });
+        assertThrows(NullPointerException.class, () -> CallService.of(null));
     }
 
     @Test
@@ -48,9 +46,8 @@ class CallServiceTest {
         BlockingQueue<Call> blockingQueue = new LinkedBlockingQueue<>();
         CallService callService = CallService.of(blockingQueue);
 
-        assertThrows(IllegalArgumentException.class, () -> {
-            callService.deleteCall(0, DirectionType.DOWN);
-        });
+        assertThrows(IllegalArgumentException.class, () ->
+                callService.deleteCall(0, DirectionType.DOWN));
     }
 
     @Test
@@ -58,9 +55,8 @@ class CallServiceTest {
         BlockingQueue<Call> blockingQueue = new LinkedBlockingQueue<>();
         CallService callService = CallService.of(blockingQueue);
 
-        assertThrows(NullPointerException.class, () -> {
-            callService.deleteCall(2, null);
-        });
+        assertThrows(NullPointerException.class, () ->
+                callService.deleteCall(2, null));
     }
 
     @Test
@@ -79,9 +75,8 @@ class CallServiceTest {
         BlockingQueue<Call> queueCall = new LinkedBlockingQueue<>();
         CallService callService = CallService.of(queueCall);
 
-        assertThrows(IllegalArgumentException.class, () -> {
-            callService.addCall(0, DirectionType.DOWN);
-        });
+        assertThrows(IllegalArgumentException.class, () ->
+                callService.addCall(0, DirectionType.DOWN));
 
     }
 
@@ -90,9 +85,8 @@ class CallServiceTest {
         BlockingQueue<Call> queueCall = new LinkedBlockingQueue<>();
         CallService callService = CallService.of(queueCall);
 
-        assertThrows(NullPointerException.class, () -> {
-            callService.addCall(2, null);
-        });
+        assertThrows(NullPointerException.class, () ->
+                callService.addCall(2, null));
     }
 
     @Test
@@ -106,6 +100,4 @@ class CallServiceTest {
 
         assertEquals(callService.takeCall(), call);
     }
-
-
 }

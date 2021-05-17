@@ -13,7 +13,7 @@ public class PassengerService {
         Preconditions.checkArgument(numberOfFloors > 0, "Floors number must be positive");
 
         int floorNumber = random.nextInt(numberOfFloors) + 1;
-        int weight = random.nextInt(Passenger.MAX_WEIGHT) + 20;
+        int weight = (int) (Math.random() * 100 + 10);
 
         return Passenger.of(weight, floorNumber);
     }
