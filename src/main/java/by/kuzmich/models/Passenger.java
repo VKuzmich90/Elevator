@@ -29,7 +29,7 @@ public class Passenger {
         log.debug("The passenger was created");
     }
 
-    public static Passenger of(int weight, int floorNumber){
+    public static Passenger of(int weight, int floorNumber) {
         checkArgument(weight > 0 && weight <= MAX_WEIGHT, "Incorrect weight!");
         checkArgument(floorNumber > 0, "floor number must exists");
 
