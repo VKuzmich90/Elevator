@@ -22,6 +22,7 @@ public class Elevator extends Thread{
     public static final int DOOR_SPEED = 1;
     public static final int ELEVATOR_SPEED = 1;
     public static final int WAITING_TIME = 2;
+    public static final int FLOORS = 20;
 
     @Getter
     private DirectionType direction;
