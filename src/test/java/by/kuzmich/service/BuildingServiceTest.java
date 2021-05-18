@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class BuildingServiceTest {
 
@@ -25,7 +25,7 @@ class BuildingServiceTest {
     @Test
     void createFloorInvalidNumberOfFloors() {
 
-        assertThrows(IllegalArgumentException.class, ()->
+        assertThrows(IllegalArgumentException.class, () ->
                 buildingService.createFloor(0));
     }
 
@@ -39,7 +39,7 @@ class BuildingServiceTest {
 
     @Test
     void createListElevatorInvalidNumberOfElevators() {
-        assertThrows(IllegalArgumentException.class, ()->
+        assertThrows(IllegalArgumentException.class, () ->
                 buildingService.createListElevator(0));
     }
 

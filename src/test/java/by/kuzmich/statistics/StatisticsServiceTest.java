@@ -4,25 +4,25 @@ import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class StatisticsServiceTest {
 
     @Test
     void invalidNumberFloorFrom() {
-        assertThrows(IllegalArgumentException.class, ()->
+        assertThrows(IllegalArgumentException.class, () ->
                 StatisticsService.of(0, 2));
     }
 
     @Test
     void invalidNumberFloorTo() {
-        assertThrows(IllegalArgumentException.class, ()->
+        assertThrows(IllegalArgumentException.class, () ->
                 StatisticsService.of(2, 0));
     }
 
     @Test
     void createWell() {
-        StatisticsService statisticsService = StatisticsService.of(1,5);
+        StatisticsService statisticsService = StatisticsService.of(1, 5);
 
         assertThat(statisticsService.getNumberFloorTo(), is(5));
         assertThat(statisticsService.getNumberFloorFrom(), is(1));

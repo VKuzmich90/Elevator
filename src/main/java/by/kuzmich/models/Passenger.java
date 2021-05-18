@@ -5,8 +5,6 @@ import lombok.Getter;
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.UUID;
-
 import static com.google.common.base.Preconditions.checkArgument;
 
 @Getter

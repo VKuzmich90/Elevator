@@ -20,19 +20,17 @@ public class BuildingService {
         List<Floor> floorList = new ArrayList<>();
 
         int i = 1;
-        while (i <= numberOfFloors){
+        while (i <= numberOfFloors) {
             FloorType floorType;
-            if(i == 1) {
+            if (i == 1) {
                 floorType = FloorType.FIRST;
-            }
-            else if (i == numberOfFloors){
+            } else if (i == numberOfFloors) {
                 floorType = FloorType.LAST;
-            }
-            else {
+            } else {
                 floorType = FloorType.INTERMEDIATE;
             }
 
-            Floor floor = Floor.of( i, floorType);
+            Floor floor = Floor.of(i, floorType);
             floor.setName("Floor #" + i);
             floorList.add(floor);
             i++;
@@ -41,13 +39,13 @@ public class BuildingService {
     }
 
 
-    public List<Elevator> createListElevator(int numberOfElevator){
+    public List<Elevator> createListElevator(int numberOfElevator) {
         checkArgument(numberOfElevator > 0, "Number of elevators must be positive!");
 
         List<Elevator> elevatorList = new ArrayList<>();
 
         int i = 1;
-        while (i <= numberOfElevator){
+        while (i <= numberOfElevator) {
             Elevator elevator = new Elevator();
             elevator.setName("Elevator #" + i);
             elevatorList.add(elevator);

@@ -17,7 +17,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 @Slf4j
 @Getter
 public class FloorService {
-    private List<Floor> floorList;
+    private final List<Floor> floorList;
 
     private FloorService(List<Floor> floorList) {
         log.debug("The floor service begins to be created");

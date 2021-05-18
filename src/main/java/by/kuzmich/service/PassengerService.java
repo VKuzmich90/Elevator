@@ -9,7 +9,7 @@ public class PassengerService {
 
     private final Random random = new Random();
 
-       public Passenger spawnPassenger (int numberOfFloors){
+    public Passenger spawnPassenger(int numberOfFloors) {
         Preconditions.checkArgument(numberOfFloors > 0, "Floors number must be positive");
 
         int floorNumber = random.nextInt(numberOfFloors) + 1;

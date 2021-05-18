@@ -11,7 +11,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ElevatorTest {
 
@@ -21,7 +21,7 @@ class ElevatorTest {
         FloorService service = FloorService.of(new ArrayList<>());
         elevator.setFloorService(service);
 
-        assertThrows(NullPointerException.class, () -> elevator.run());
+        assertThrows(NullPointerException.class, elevator::start);
     }
 
     @Test
@@ -30,7 +30,7 @@ class ElevatorTest {
         CallService service = CallService.of(new LinkedBlockingQueue<>());
         elevator.setCallService(service);
 
-        assertThrows(NullPointerException.class, () -> elevator.run());
+        assertThrows(NullPointerException.class, elevator::start);
     }
 
     @Test
@@ -112,9 +112,8 @@ class ElevatorTest {
         Elevator elevator = new Elevator();
 
 
-        assertThrows(NullPointerException.class, () -> {
-            elevator.addPassenger(Passenger.of(47, 1));
-        });
+        assertThrows(NullPointerException.class, () ->
+                elevator.addPassenger(Passenger.of(47, 1)));
     }
 
     @Test

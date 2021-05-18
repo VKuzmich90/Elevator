@@ -3,7 +3,6 @@ package by.kuzmich.models;
 import by.kuzmich.service.CallService;
 import by.kuzmich.service.FloorService;
 import by.kuzmich.service.PassengerService;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -16,10 +15,10 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static com.google.common.base.Preconditions.*;
+import static com.google.common.base.Preconditions.checkArgument;
+import static com.google.common.base.Preconditions.checkNotNull;
 
 @Slf4j
-@EqualsAndHashCode
 public class Floor extends Thread {
 
     @Getter
@@ -195,19 +194,11 @@ public class Floor extends Thread {
     }
 
     public boolean needToPressTheButtonDown() {
-        if (isEmptyQueueDown()) {
-            return false;
-        }
-
-        return true;
+        return !isEmptyQueueDown();
     }
 
     public boolean needToPressTheButtonUp() {
-        if (isEmptyQueueUp()) {
-            return false;
-        }
-
-        return true;
+        return !isEmptyQueueUp();
     }
 
 }

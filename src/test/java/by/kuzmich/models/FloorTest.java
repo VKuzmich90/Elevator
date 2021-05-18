@@ -20,7 +20,7 @@ class FloorTest {
     private Floor floor;
 
     @BeforeEach
-    void addFloor(){
+    void addFloor() {
         floor = Floor.of(5, FloorType.INTERMEDIATE);
     }
 
@@ -34,12 +34,12 @@ class FloorTest {
 
     @Test
     void invalidNullFloorType() {
-        assertThrows(NullPointerException.class, ()-> Floor.of(2, null));
+        assertThrows(NullPointerException.class, () -> Floor.of(2, null));
     }
 
     @Test
     void invalidFloorNumber() {
-        assertThrows(IllegalArgumentException.class, ()-> Floor.of(0, FloorType.FIRST));
+        assertThrows(IllegalArgumentException.class, () -> Floor.of(0, FloorType.FIRST));
     }
 
     @Test
@@ -91,7 +91,7 @@ class FloorTest {
     @Test
     void setCallServiceInvalidNullFloor() {
 
-        assertThrows(NullPointerException.class, ()-> floor.setCallService(null));
+        assertThrows(NullPointerException.class, () -> floor.setCallService(null));
     }
 
     @Test
@@ -109,7 +109,7 @@ class FloorTest {
 
     @Test
     void setFloorServiceInvalidNullFloor() {
-        assertThrows(NullPointerException.class, ()-> floor.setFloorService(null));
+        assertThrows(NullPointerException.class, () -> floor.setFloorService(null));
     }
 
 
@@ -123,7 +123,7 @@ class FloorTest {
 
     @Test
     void setPassengerServiceInvalidNull() {
-        assertThrows(NullPointerException.class, ()-> floor.setPassengerService(null));
+        assertThrows(NullPointerException.class, () -> floor.setPassengerService(null));
     }
 
     @Test
@@ -135,7 +135,7 @@ class FloorTest {
 
     @Test
     void takePassenerFromQueueUpInvalidFreeWeight() {
-        assertThrows(IllegalArgumentException.class, ()->
+        assertThrows(IllegalArgumentException.class, () ->
                 floor.takePassengerFromQueueUp(-5));
     }
 
@@ -148,7 +148,7 @@ class FloorTest {
 
     @Test
     void takePassengerFromQueueDownInvalidFreeWeight() {
-        assertThrows(IllegalArgumentException.class, ()-> floor.takePassengerFromQueueDown(-5));
+        assertThrows(IllegalArgumentException.class, () -> floor.takePassengerFromQueueDown(-5));
     }
 
     @Test
@@ -158,7 +158,7 @@ class FloorTest {
         CallService callService = CallService.of(new LinkedBlockingQueue<>());
         floor.setCallService(callService);
 
-        assertThrows(NullPointerException.class, ()-> floor.run());
+        assertThrows(NullPointerException.class, () -> floor.start());
     }
 
     @Test
@@ -168,7 +168,7 @@ class FloorTest {
         PassengerService passengerService = new PassengerService();
         floor.setPassengerService(passengerService);
 
-        assertThrows(NullPointerException.class, ()-> floor.run());
+        assertThrows(NullPointerException.class, () -> floor.start());
     }
 
     @Test
@@ -178,7 +178,7 @@ class FloorTest {
         CallService callService = CallService.of(new LinkedBlockingQueue<>());
         floor.setCallService(callService);
 
-        assertThrows(NullPointerException.class, ()-> floor.run());
+        assertThrows(NullPointerException.class, () -> floor.start());
     }
 
     @Test
@@ -206,9 +206,9 @@ class FloorTest {
 
     @Test
     void addPassengerUpInvalidNullPerson() {
-        assertThrows(NullPointerException.class, ()-> floor.addPassengerUp(null));
+        assertThrows(NullPointerException.class, () -> floor.addPassengerUp(null));
 
-        assertThrows(IllegalArgumentException.class, ()-> floor.addPassengerUp(Passenger.of(60, 2)));
+        assertThrows(IllegalArgumentException.class, () -> floor.addPassengerUp(Passenger.of(60, 2)));
     }
 
     @Test
@@ -221,8 +221,8 @@ class FloorTest {
 
     @Test
     void addPassengerDownInvalidNullPerson() {
-        assertThrows(NullPointerException.class, ()-> floor.addPassengerDown(null));
+        assertThrows(NullPointerException.class, () -> floor.addPassengerDown(null));
 
-        assertThrows(IllegalArgumentException.class, ()-> floor.addPassengerDown(Passenger.of(40, 7)));
+        assertThrows(IllegalArgumentException.class, () -> floor.addPassengerDown(Passenger.of(40, 7)));
     }
 }
