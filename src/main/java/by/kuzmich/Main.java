@@ -7,8 +7,5 @@ public class Main {
 
         Building building = Building.of(20, 5);
         building.start();
-
     }
-
-
 }

@@ -60,6 +60,11 @@ public class Elevator extends Thread {
 
         while (!isStop()) {
             Call call = getNextCall();
+
+            if (call == null) {
+                continue;
+            }
+
             this.direction = call.getDirection();
             int minFloor = 1000;
             int maxFloor = 0;
