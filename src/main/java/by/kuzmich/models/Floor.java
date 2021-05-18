@@ -9,7 +9,6 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 import java.util.Queue;
-import java.util.UUID;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
@@ -32,8 +31,6 @@ public class Floor extends Thread {
     @Getter
     private boolean isPressedUp;
 
-    private final UUID id;
-
     private CallService callService;
     private FloorService floorService;
     @Getter
@@ -47,7 +44,6 @@ public class Floor extends Thread {
     private Floor(int floorNumber, FloorType floorType) {
         log.debug("The floor begins to be created");
 
-        this.id = UUID.randomUUID();
         this.floorNumber = floorNumber;
         this.floorType = floorType;
         this.queueDown = new ConcurrentLinkedQueue<>();
@@ -69,7 +65,6 @@ public class Floor extends Thread {
 
         queueUp.add(passenger);
     }
-
 
     public void addPassengerDown(Passenger passenger) {
         checkNotNull(passenger, "Passenger must exist");
