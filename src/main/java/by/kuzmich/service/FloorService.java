@@ -46,9 +46,10 @@ public class FloorService {
         if (direction == DirectionType.UP) {
             if (floor.getFloorType() != FloorType.LAST) {
                 int numberNextFloor = floor.getFloorNumber() + 1;
-                log.info("{} now on the {} floor", Thread.currentThread().getName(), floor.getFloorNumber());
+                log.info("{} now in the {} floor", Thread.currentThread().getName(), floor.getFloorNumber());
                 floor = getFloor(numberNextFloor);
                 log.info("{} moved to the {} floor", Thread.currentThread().getName(), numberNextFloor);
+
             }
         } else {
             if (floor.getFloorType() != FloorType.FIRST) {
@@ -89,5 +90,6 @@ public class FloorService {
     public List<Floor> getFloorList() {
         return List.copyOf(floorList);
     }
+
 
 }

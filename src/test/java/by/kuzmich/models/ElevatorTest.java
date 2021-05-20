@@ -51,23 +51,6 @@ class ElevatorTest {
     }
 
     @Test
-    void setWeightInvalid() {
-        Elevator elevator = new Elevator();
-
-        assertThrows(IllegalArgumentException.class, () -> elevator.setWeight(-5));
-
-        assertThrows(IllegalArgumentException.class, () -> elevator.setWeight(600));
-    }
-
-    @Test
-    void setWeightWell() {
-        Elevator elevator = new Elevator();
-        elevator.setWeight(70);
-
-        assertThat(elevator.getWeight(), is(70));
-    }
-
-    @Test
     void setCallServiceInvalidNull() {
         Elevator elevator = new Elevator();
 

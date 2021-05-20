@@ -134,7 +134,7 @@ class FloorTest {
     }
 
     @Test
-    void takePassenerFromQueueUpInvalidFreeWeight() {
+    void takePassengerFromQueueUpInvalidFreeWeight() {
         assertThrows(IllegalArgumentException.class, () ->
                 floor.takePassengerFromQueueUp(-5));
     }
@@ -190,7 +190,7 @@ class FloorTest {
         PassengerService passengerService = new PassengerService();
         floor.setPassengerService(passengerService);
 
-        floor.stoppedThread();
+        floor.stopThread();
         floor.start();
 
         assertThat(floor.getPassengerService(), is(passengerService));

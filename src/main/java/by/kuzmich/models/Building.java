@@ -19,8 +19,6 @@ import static com.google.common.base.Preconditions.checkArgument;
 @Getter
 @EqualsAndHashCode
 public class Building {
-    private final int numberOfFloors;
-    private final int numberOfElevators;
     private final List<Floor> floors;
     private final BlockingQueue<Call> callQueue = new LinkedBlockingQueue<>();
     private final List<Elevator> elevators;
@@ -31,10 +29,8 @@ public class Building {
 
         BuildingService buildingService = new BuildingService();
 
-        this.numberOfFloors = numberOfFloors;
-        this.numberOfElevators = numberOfElevators;
-        this.floors = buildingService.createFloor(numberOfFloors);
-        this.elevators = buildingService.createListElevator(numberOfElevators);
+        this.floors = buildingService.createListFloors(numberOfFloors);
+        this.elevators = buildingService.createListElevators(numberOfElevators);
 
         log.info("The building was created");
     }
@@ -73,7 +69,11 @@ public class Building {
         return List.copyOf(elevators);
     }
 
-    public List<Call> getCallQueue() {
-        return List.copyOf(callQueue);
+    public int getNumberOfFloors() {
+        return floors.size();
+    }
+
+    public int getNumberOfElevators() {
+        return elevators.size();
     }
 }

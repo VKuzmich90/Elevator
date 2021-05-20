@@ -12,26 +12,26 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class BuildingServiceTest {
 
-    BuildingService buildingService = new BuildingService();
+    final BuildingService buildingService = new BuildingService();
 
 
     @Test
-    void createFloorWell() {
-        List<Floor> floorList = buildingService.createFloor(4);
+    void createListFloorWell() {
+        List<Floor> floorList = buildingService.createListFloors(4);
 
         assertThat(floorList.size(), is(4));
     }
 
     @Test
-    void createFloorInvalidNumberOfFloors() {
+    void createListFloorInvalidNumberOfFloors() {
 
         assertThrows(IllegalArgumentException.class, () ->
-                buildingService.createFloor(0));
+                buildingService.createListFloors(0));
     }
 
     @Test
     void createListElevatorWell() {
-        List<Elevator> elevatorList = buildingService.createListElevator(4);
+        List<Elevator> elevatorList = buildingService.createListElevators(4);
 
         assertThat(elevatorList.size(), is(4));
 
@@ -40,7 +40,7 @@ class BuildingServiceTest {
     @Test
     void createListElevatorInvalidNumberOfElevators() {
         assertThrows(IllegalArgumentException.class, () ->
-                buildingService.createListElevator(0));
+                buildingService.createListElevators(0));
     }
 
 }

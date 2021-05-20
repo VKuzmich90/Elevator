@@ -23,14 +23,12 @@ public class Statistics {
         });
     }
 
-    private boolean createEntryIfNotExists(StatisticsService service) {
+    private void createEntryIfNotExists(StatisticsService service) {
         checkNotNull(service, "Service must exist");
 
         if (!statisticsMap.containsKey(service)) {
             statisticsMap.put(service, 0);
-            return true;
         }
-        return false;
     }
 
     public Map<StatisticsService, Integer> getStatisticsMap() {

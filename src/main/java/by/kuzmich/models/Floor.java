@@ -48,6 +48,7 @@ public class Floor extends Thread {
         this.floorType = floorType;
         this.queueDown = new ConcurrentLinkedQueue<>();
         this.queueUp = new ConcurrentLinkedQueue<>();
+        this.setName("Floor #" + floorNumber);
 
         log.debug("The floor was created");
     }
@@ -124,28 +125,28 @@ public class Floor extends Thread {
         this.passengerService = passengerService;
     }
 
-    public void stoppedThread() {
+    public void stopThread() {
         stopped = true;
     }
 
-    public void offPressedDown() {
+    public void setPressDownOff() {
         isPressedDown = false;
     }
 
-    public void onPressedDown() {
+    public void setPressDownOn() {
         isPressedDown = true;
     }
 
-    public void offPressedUp() {
+    public void setPressUpOff() {
         isPressedUp = false;
     }
 
-    public void onPressedUp() {
+    public void setPressUpOn() {
         isPressedUp = true;
     }
 
     public Passenger takePassengerFromQueueUp(int freeWeightInElevator) {
-        checkArgument(freeWeightInElevator >= 0, "free elevator capacity must be positive");
+        checkArgument(freeWeightInElevator >= 0, "free elevator capacity les than 0!");
 
         lock.lock();
 
@@ -163,7 +164,7 @@ public class Floor extends Thread {
     }
 
     public Passenger takePassengerFromQueueDown(int freeWeightInElevator) {
-        checkArgument(freeWeightInElevator >= 0, "free elevator capacity must be positive!");
+        checkArgument(freeWeightInElevator >= 0, "free elevator capacity less than 0!");
 
         lock.lock();
 
@@ -188,11 +189,11 @@ public class Floor extends Thread {
         return this.queueDown.isEmpty();
     }
 
-    public boolean needToPressTheButtonDown() {
+    public boolean needToPressButtonDown() {
         return !isEmptyQueueDown();
     }
 
-    public boolean needToPressTheButtonUp() {
+    public boolean needToPressButtonUp() {
         return !isEmptyQueueUp();
     }
 

@@ -15,7 +15,6 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 @Slf4j
@@ -30,8 +29,6 @@ public class Elevator extends Thread {
     private DirectionType direction;
     @Getter
     private Floor floor;
-    @Getter
-    private int weight;
     private final List<Passenger> passengers = new ArrayList<>();
     @Getter
     private boolean isDoorOpened;
@@ -47,7 +44,6 @@ public class Elevator extends Thread {
 
     public Elevator() {
         this.direction = null;
-        this.weight = 0;
         this.stop = false;
         this.isDoorOpened = false;
     }
@@ -76,53 +72,30 @@ public class Elevator extends Thread {
 
             while (floor.getFloorNumber() != maxFloor && floor.getFloorNumber() != minFloor) {
 
-                landingPeople();
+                landPeople();
                 if (direction == DirectionType.UP) {
                     int maxNeededFloorNumber = addAllPassengersUp();
-
                     maxFloor = Math.max(maxFloor, maxNeededFloorNumber);
 
-                    if (floor.getFloorNumber() == call.getNumber() && passengers.isEmpty()) {
-                        break;
-                    }
+                    doMoveLogic(maxFloor, call);
 
-                    needCloseDoor();
-                    TimeUnit.SECONDS.sleep(ELEVATOR_SPEED);
-
-                    floor = floorService.nextFloor(floor, direction);
-
-                    if (floor.getFloorNumber() == maxFloor) {
-                        landingPeople();
-                        needCloseDoor();
-                    }
                 } else if (direction == DirectionType.DOWN) {
                     int minNeededFloorNumber = addAllPassengersDown();
                     minFloor = Math.min(minFloor, minNeededFloorNumber);
 
-                    if (floor.getFloorNumber() == call.getNumber() && passengers.isEmpty()) {
-                        break;
-                    }
-
-                    needCloseDoor();
-                    TimeUnit.SECONDS.sleep(ELEVATOR_SPEED);
-
-                    floor = floorService.nextFloor(floor, direction);
-
-                    if (floor.getFloorNumber() == minFloor) {
-                        landingPeople();
-                        needCloseDoor();
-                    }
+                    doMoveLogic(minFloor, call);
                 }
             }
         }
     }
 
-    public void setWeight(int weight) {
-        checkArgument(weight >= 0 && weight <= ELEVATOR_CAPACITY, "Weight must be positive and less then " + ELEVATOR_CAPACITY);
-
-        this.weight = weight;
+    public int getPassengersWeight() {
+        return passengers.stream().mapToInt(Passenger::getWeight).sum();
     }
 
+    public int getFreeWeight() {
+        return ELEVATOR_CAPACITY - getPassengersWeight();
+    }
 
     public void setCallService(CallService callService) {
         checkNotNull(callService, "Call service is null!");
@@ -153,10 +126,9 @@ public class Elevator extends Thread {
         checkNotNull(floor, "Floor is null!");
 
         passengers.add(passenger);
-        weight += passenger.getWeight();
 
         log.info("Floor: {}, Add {}", floor.getFloorNumber(), passenger);
-        log.info("Load elevator = {}", weight);
+        log.info("Load elevator = {}", getPassengersWeight());
 
         addServiceStatistics(passenger);
         return passenger.getFloorNumber();
@@ -170,15 +142,14 @@ public class Elevator extends Thread {
         if (!statisticsServiceMap.containsKey(statisticsService)) {
             statisticsServiceMap.put(statisticsService, 0);
         }
-
         statisticsServiceMap.put(statisticsService, statisticsServiceMap.get(statisticsService) + 1);
     }
 
     private int addPassengerDown() {
-        floor.offPressedDown();
+        floor.setPressDownOff();
         callService.deleteCall(floor.getFloorNumber(), direction);
 
-        Passenger passengerAdd = floor.takePassengerFromQueueDown(ELEVATOR_CAPACITY - this.weight);
+        Passenger passengerAdd = floor.takePassengerFromQueueDown(getFreeWeight());
         if (passengerAdd != null) {
             return addPassenger(passengerAdd);
         }
@@ -187,10 +158,11 @@ public class Elevator extends Thread {
     }
 
     @SneakyThrows
-    private void needCloseDoor() {
+    private void closeDoor() {
         if (isDoorOpened()) {
             TimeUnit.SECONDS.sleep(WAITING_TIME);
-            closeTheDoor();
+            TimeUnit.SECONDS.sleep(DOOR_SPEED);
+            isDoorOpened = false;
         }
     }
 
@@ -203,16 +175,16 @@ public class Elevator extends Thread {
             }
             minNeeded = Math.min(minNeeded, neededFloorNumber);
         }
-        needAddCallDown(floor);
+        addCallDown(floor);
 
         return minNeeded;
     }
 
     private int addPassengerUp() {
-        floor.offPressedUp();
+        floor.setPressUpOff();
         callService.deleteCall(floor.getFloorNumber(), direction);
 
-        Passenger passengerAd = floor.takePassengerFromQueueUp(ELEVATOR_CAPACITY - this.weight);
+        Passenger passengerAd = floor.takePassengerFromQueueUp(getFreeWeight());
 
         if (passengerAd != null) {
             return addPassenger(passengerAd);
@@ -235,7 +207,7 @@ public class Elevator extends Thread {
             }
             maxNeeded = Math.max(maxNeeded, neededFloorNumber);
         }
-        needAddCallUp(floor);
+        addCallUp(floor);
 
         return maxNeeded;
     }
@@ -251,29 +223,22 @@ public class Elevator extends Thread {
         }
     }
 
-    private void needAddCallDown(Floor floor) {
+    private void addCallDown(Floor floor) {
         checkNotNull(floor, "Floor is null!");
 
-        if (floor.needToPressTheButtonDown()) {
-            floor.onPressedDown();
+        if (floor.needToPressButtonDown()) {
+            floor.setPressDownOn();
             callService.addCall(floor.getFloorNumber(), direction);
         }
     }
 
-    private void needAddCallUp(Floor floor) {
+    private void addCallUp(Floor floor) {
         checkNotNull(floor, "Floor is null!");
 
-        if (floor.needToPressTheButtonUp()) {
-            floor.onPressedUp();
+        if (floor.needToPressButtonUp()) {
+            floor.setPressUpOn();
             callService.addCall(floor.getFloorNumber(), direction);
         }
-
-    }
-
-    @SneakyThrows
-    public void closeTheDoor() {
-        TimeUnit.SECONDS.sleep(DOOR_SPEED);
-        isDoorOpened = false;
     }
 
     @SneakyThrows
@@ -282,7 +247,7 @@ public class Elevator extends Thread {
         isDoorOpened = true;
     }
 
-    public void landingPeople() {
+    public void landPeople() {
         List<Passenger> people = passengers.stream()
                 .filter(person -> person.getFloorNumber() == floor.getFloorNumber())
                 .collect(Collectors.toList());
@@ -294,7 +259,6 @@ public class Elevator extends Thread {
 
             passengers.removeAll(people);
             int weightPeopleRemoved = people.stream().mapToInt(Passenger::getWeight).sum();
-            this.weight -= weightPeopleRemoved;
 
             log.info("Floor: {},remove: {}", floor.getFloorNumber(), people);
             addToStatistics();
@@ -314,8 +278,20 @@ public class Elevator extends Thread {
         return List.copyOf(passengers);
     }
 
-    public Map<StatisticsService, Integer> getStatisticsServiceMap() {
-        return Map.copyOf(statisticsServiceMap);
-    }
+    @SneakyThrows
+    public void doMoveLogic(int floorNumber, Call call) {
+        if (floor.getFloorNumber() == call.getNumber() && passengers.isEmpty()) {
+            return;
+        }
 
+        closeDoor();
+        TimeUnit.SECONDS.sleep(ELEVATOR_SPEED);
+
+        floor = floorService.nextFloor(floor, direction);
+
+        if (floor.getFloorNumber() == floorNumber) {
+            landPeople();
+            closeDoor();
+        }
+    }
 }
