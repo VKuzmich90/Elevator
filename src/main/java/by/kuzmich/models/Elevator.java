@@ -258,7 +258,6 @@ public class Elevator extends Thread {
             }
 
             passengers.removeAll(people);
-            int weightPeopleRemoved = people.stream().mapToInt(Passenger::getWeight).sum();
 
             log.info("Floor: {},remove: {}", floor.getFloorNumber(), people);
             addToStatistics();
