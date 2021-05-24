@@ -103,7 +103,7 @@ public class Floor extends Thread {
                 callService.addCall(floorNumber, DirectionType.UP);
             }
             log.info("Up: {}, Down: {}", queueUp, queueDown);
-            TimeUnit.SECONDS.sleep(10);
+            TimeUnit.SECONDS.sleep(12);
         }
     }
 

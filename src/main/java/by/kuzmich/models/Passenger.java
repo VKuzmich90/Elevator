@@ -33,5 +33,4 @@ public class Passenger {
 
         return new Passenger(weight, floorNumber);
     }
-
 }
